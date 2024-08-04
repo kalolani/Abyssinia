@@ -2,8 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "colasta"; /* Choose a name for your font */
+  src: url("./fonts/Colasta-Bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Add this to your global CSS file or a CSS module */
+/* styles.css */
+@keyframes wc-y-anim {
+  /* Define your keyframes here */
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+@keyframes cube {
+  /* Define your keyframes here */
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+@keyframes bubble-one {
+  /* Define your keyframes here */
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+@keyframes bubble-two {
+  /* Define your keyframes here */
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.wc-y-anim {
+  @apply animate-wc-y-anim;
+}
+.cube {
+  @apply animate-cube;
+}
+.bubble-one {
+  @apply animate-bubble-one;
+}
+.bubble-two {
+  @apply animate-bubble-two;
 }
