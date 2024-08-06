@@ -66,3 +66,6 @@
 .bubble-two {
   @apply animate-bubble-two;
 }
+.group {
+  transition: all 15s;
+}

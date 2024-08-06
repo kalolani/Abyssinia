@@ -37,7 +37,7 @@ export default {
         "wc-y-anim": "wc-y-anim 5s ease-in-out infinite alternate",
         cube: "cube 3s ease-in-out infinite alternate",
         "bubble-one": "bubble-one 2s ease-in-out infinite alternate",
-        "bubble-two": "bubble-two 2s ease infinite alternate",
+        "bubble-two": "bubble-two 3s ease infinite alternate",
       },
 
       keyframes: {
