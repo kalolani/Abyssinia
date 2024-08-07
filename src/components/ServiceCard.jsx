@@ -9,7 +9,7 @@ const ServiceCard = ({ title, description, buttonText, image }) => {
         <div className="flex justify-center mb-4">
           <img src={image} alt={title} className="h-[50px] w-[50px]" />
         </div>
-        <h2 className="text-primary group-hover:text-tertiary font-colasta text-primary text-lg font-semibold mb-2 text-center">
+        <h2 className="capitalize text-primary group-hover:text-tertiary font-colasta text-primary text-lg font-semibold mb-2 text-center">
           {title}
         </h2>
         <p className="text-secondary group-hover:text-tertiary text-[13px] mb-4 text-center py-2">

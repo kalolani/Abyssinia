@@ -1,5 +1,6 @@
 // import FlipCard from "../components/FlipCard";
 import Header from "../components/Header";
+import Projects from "../components/Projects";
 import Services from "../components/Services";
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
       <Header />
       {/* <FlipCard /> */}
       <Services />
+      <Projects />
     </div>
   );
 }

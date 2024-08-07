@@ -14,38 +14,38 @@ function Services() {
       </h1>
       <div className="relative z-[11] max-w-[1150px] m-auto grid grid-cols-3 gap-8 pt-10 z-[10]">
         <ServiceCard
-          image="web-dev.png"
-          title="Web and website development"
+          image="pc.png"
+          title="website development"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
         <ServiceCard
           image="mobile-app.png"
-          title="Web and website development"
+          title="mobile app development"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
         <ServiceCard
           image="consulting.png"
-          title="Web and website development"
+          title="software as service"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
         <ServiceCard
-          image="web-dev.png"
-          title="Web and website development"
+          image="sass.png"
+          title="General technology consulting"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
         <ServiceCard
-          image="mobile-app.png"
-          title="Web and website development"
+          image="pc-1.png"
+          title="software development training"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
         <ServiceCard
-          image="web-dev.png"
-          title="Web and website development"
+          image="testing.png"
+          title="software security tasting"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
