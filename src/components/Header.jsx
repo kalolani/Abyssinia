@@ -3,7 +3,7 @@ import PageNav from "./PageNav";
 
 function Header() {
   return (
-    <div className="relative">
+    <div className="relative bg-gradient-to-b from-[#FBF7F4] to-[#fbf7f400] ">
       <PageNav />
 
       <div className="flex justify-center">

@@ -2,7 +2,7 @@ import ServiceCard from "./ServiceCard";
 
 function Services() {
   return (
-    <div className="relative bg-[#FBF7F4] my-16 py-16">
+    <div className="relative bg-[#FBF7F4] mt-16 py-16">
       <div className="flex justify-center">
         <p className="capitalize text-center text-secondary text-[14px] font-medium py-2 px-[20px] tracking-wider rounded-[5px] bg-gradient-to-r from-[#FEE7C4] to-[#BEE5E4]">
           our services

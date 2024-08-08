@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <div className="py-[56px]">
+    <div className="bg-[#EDF4F3] py-[56px]">
       <div className="flex justify-center">
         <p className="capitalize text-center text-secondary text-[14px] font-medium py-2 px-[20px] tracking-wider rounded-[5px] bg-gradient-to-r from-[#FEE7C4] to-[#BEE5E4]">
           our projects
