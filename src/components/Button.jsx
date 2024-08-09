@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { motion } from "framer-motion";
 
-const Button = ({
+const Link = ({
   children,
-  type = "button",
-  onClick,
+  href = "#",
   variant = "primary",
   size = "md",
   disabled = false,
@@ -13,17 +11,18 @@ const Button = ({
   ...props
 }) => {
   const baseStyles =
-    "focus:outline-none font-bold rounded-[15px] px-[30px] py-[16px]";
+    "tracking-wide inline-flex items-center justify-center whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 link text-[16px] font-bold leading-none capitalize transition-all duration-[300ms] bg-btn-bg-main hover:bg-primary rounded-[15px] perspective-1000 overflow-hidden z-[10000] gap-[30px] h-[50px] px-[25px] px-[16px]";
 
   const variantStyles = {
-    primary: "text-white bg-blue-500",
-    secondary: "text-primary bg-transparent border-[1px] border-[#ebedef]",
-    danger: "text-white bg-red-500",
+    primary:
+      "text-tertiary bg-btn-bg-main hover:text-tertiary hover:bg-primary",
+    secondary: "text-primary bg-transparent hover:text-tertiary border-[1px]",
+    danger: "text-red-500 bg-transparent hover:bg-red-500 hover:text-white",
   };
 
   const sizeStyles = {
     sm: "px-3 py-1 text-sm",
-    md: "px-4 py-2",
+    md: "px-4 py-2 text-md",
     lg: "px-6 py-3 text-lg",
   };
 
@@ -31,67 +30,34 @@ const Button = ({
     baseStyles,
     variantStyles[variant],
     sizeStyles[size],
-    { "opacity-50 cursor-not-allowed": disabled },
+    {
+      "opacity-50 pointer-events-none": disabled,
+    },
     className
   );
 
-  const buttonVariants = {
-    initial: { y: "0%" },
-    hovered: {
-      y: "-100%",
-      transition: { duration: 0.5, ease: [0.8, 0, 0.3, 1] },
-    },
-  };
-
-  // Define background color variants for hover
-  const backgroundHoverStyles = {
-    primary: "hover:bg-primary",
-    secondary: "hover:bg-primary hover:text-tertiary",
-    danger: "hover:bg-red-600",
-  };
-
   return (
-    <motion.button
-      initial="initial"
-      whileHover="hovered"
-      type={type}
-      onClick={onClick}
-      className={`${classes} ${backgroundHoverStyles[variant]} perspective-1000 transform  transition-colors duration-[100ms]`}
-      style={{ transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)" }}
-      disabled={disabled}
+    <a
+      href={href}
+      className={classes}
+      aria-disabled={disabled}
+      tabIndex={disabled ? -1 : 0}
       {...props}
     >
-      <motion.span
-        className="relative block overflow-hidden whitespace-nowrap"
-        style={{ perspective: "1000px" }}
-      >
-        <motion.div
-          style={{ transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)" }}
-          className="transform transition-transform duration-[100ms]"
-          variants={buttonVariants}
-        >
-          {children}
-        </motion.div>
-        <motion.div
-          style={{ transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)" }}
-          className="absolute inset-0 transform transition-transform duration-[100ms]"
-          variants={{ initial: { y: "100%" }, hovered: { y: "0%" } }}
-        >
-          {children}
-        </motion.div>
-      </motion.span>
-    </motion.button>
+      <span className="btn-span" data-text={children}>
+        {children}
+      </span>
+    </a>
   );
 };
 
-Button.propTypes = {
+Link.propTypes = {
   children: PropTypes.node.isRequired,
-  type: PropTypes.oneOf(["button", "submit", "reset"]),
-  onClick: PropTypes.func,
+  href: PropTypes.string,
   variant: PropTypes.oneOf(["primary", "secondary", "danger"]),
   size: PropTypes.oneOf(["sm", "md", "lg"]),
   disabled: PropTypes.bool,
   className: PropTypes.string,
 };
 
-export default Button;
+export default Link;

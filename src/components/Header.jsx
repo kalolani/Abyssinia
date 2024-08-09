@@ -26,10 +26,10 @@ function Header() {
           size="md"
           className="bg-btn-bg-main font-bold"
         >
-          apply now
+          Apply now
         </Button>
         <Button variant="secondary" size="lg" className="ml-4">
-          read more
+          Read more
         </Button>
       </div>
       <div className="absolute top-[70%] end-[-24%] z-[-1]">

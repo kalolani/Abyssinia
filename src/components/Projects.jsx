@@ -20,10 +20,10 @@ function Projects() {
           height="709"
           decoding="async"
           data-nimg="1"
-          className="maz-w-[inherit] absolute left-[50%] -top-[36%] -z-[1] -translate-x-2/4 rtl:transform rtl:rotate-y-[180deg] rtl:-translate-x-2/4"
+          className="absolute left-[50%] -top-[70px] -z-[1] -translate-x-2/4 transform rotate-y-[180deg] -translate-x-2/4"
         />
       </div>
-      <div className="relative z-[1] mt-[150px] grid grid-cols-3 max-w-[1150px] m-auto gap-8">
+      <div className="relative z-[1] mt-[70px] grid grid-cols-3 max-w-[1150px] m-auto gap-8">
         <ProjectCard
           image="mall.jpg"
           title="mall building information management system"

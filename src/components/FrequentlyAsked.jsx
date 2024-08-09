@@ -3,6 +3,7 @@
 import { FiPlus } from "react-icons/fi";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 function FrequentlyAsked({ data }) {
   const [curOpen, setCurOpen] = useState(null);
@@ -16,7 +17,7 @@ function FrequentlyAsked({ data }) {
       <h2 className="text-primary font-bold text-center capitalize text-4xl my-4">
         Get the Answers to Common Questions
       </h2>
-      <div className="max-w-[1150px] grid grid-cols-2 m-auto gap-8 pt-10">
+      <div className="max-w-[1050px] grid grid-cols-2 items-start m-auto gap-14 pt-10">
         <div className="w-[500px] flex flex-col gap-[24px]">
           {data.map((item, i) => (
             <AccordionItem
@@ -31,7 +32,10 @@ function FrequentlyAsked({ data }) {
           ))}
         </div>
         <div className="grid">
-          <img src="her.png" className="place-items-start -mt-[20px]" />
+          <img
+            src="her.png"
+            className="h-[100%] place-items-start -mt-[30px]"
+          />
         </div>
       </div>
     </div>
@@ -53,15 +57,13 @@ function AccordionItem({ num, title, curOpen, setCurOpen, children }) {
 
   return (
     <div
-      className={`relative shadow-md py-[14px] px-[24px] cursor-pointer border-[1px] grid grid-cols-[auto_1fr_auto] items-center rounded-t-md gap-[24px] items-center${
+      className={`w-[450px] relative shadow-md py-[14px] px-[24px] cursor-pointer border-[1px] grid grid-cols-[auto_1fr_auto] items-center rounded-t-md gap-[24px] ${
         isOpen ? "open" : ""
       }`}
       onClick={toggleHandler}
     >
       <div
-        className={`relative z-[1] inline-block px-[3px] py-[3px] bg-amber-100 rounded-sm ${
-          isOpen ? "" : ""
-        }`}
+        className={`relative z-[1] inline-block px-[3px] py-[3px] bg-amber-100 rounded-sm`}
       >
         {num}
       </div>
@@ -72,23 +74,31 @@ function AccordionItem({ num, title, curOpen, setCurOpen, children }) {
       >
         {title}
       </p>
-      <p className={`relative z-[1] ${isOpen ? "" : ""}`}>
+      <p className={`relative z-[1]`}>
         {isOpen ? (
-          <FaTimes size={20} color={iconColor} />
+          <FaTimes size={17} color={iconColor} />
         ) : (
-          <FiPlus size={22} color={iconColor} />
+          <FiPlus size={17} color={iconColor} />
         )}
       </p>
-      <div
-        className={`w-full col-span-3 px-2 transition-all duration-[.05s] ${
-          isOpen ? "visible h-full " : "invisible hidden h-0"
-        }`}
+      <motion.div
+        className="w-full col-span-3 px-2 overflow-hidden"
+        initial={{ height: 0, opacity: 0 }}
+        animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
+        transition={{
+          height: { duration: 0.5, ease: "easeInOut" },
+          opacity: { duration: 0.3, ease: "easeInOut" },
+        }}
+        style={{ display: isOpen ? "block" : "none" }} // Conditionally render the content
       >
         {children}
-      </div>
-      {isOpen && (
-        <div className="absolute top-0 left-0 w-full h-[60px] bg-orange-950 z-0"></div>
-      )}
+      </motion.div>
+
+      <div
+        className={`absolute top-0 left-0 w-full bg-orange-950 z-0 ${
+          isOpen ? "h-[60px]" : "h-0"
+        }`}
+      ></div>
     </div>
   );
 }

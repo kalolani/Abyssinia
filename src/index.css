@@ -66,6 +66,53 @@
 .bubble-two {
   @apply animate-bubble-two;
 }
-.group {
+/* .group {
   transition: all 15s;
+} */
+
+.btn-span,
+.btn-span:before {
+  transform-origin: 50% 0;
+  animation-duration: 0.5s;
+}
+
+.btn-span {
+  position: relative;
+  display: inline-block;
+  transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+  padding: 0;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+  transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotate(0)
+    rotate3d(0, 0, 0, 0deg) skewX(0) skewY(0) scale3d(1, 1, 1);
+  transform-style: preserve-3d;
+}
+/* ///////////////////////////////////////////////////////// */
+.btn-span:before,
+.link:hover .btn-span {
+  transform: translate(0, -2px) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+  transform: translate3d(0, -2px, 0) rotateX(90deg) rotateY(0) rotate(0)
+    rotate3d(0, 0, 0, 0deg) skewX(0) skewY(0) scale3d(1, 1, 1);
+}
+.btn-span:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+  --tw-content: attr(data-text);
+  transform: rotateX(-90deg);
+  content: var(--tw-content);
+}
+
+.link:hover .btn-span {
+  transform: translateY(-2px);
+  color: inherit;
+  transform: rotateX(90deg);
 }
