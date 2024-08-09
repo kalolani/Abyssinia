@@ -7,6 +7,7 @@ import { AiOutlineDollarCircle } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { MdSecurity } from "react-icons/md";
 import { AiOutlineSecurityScan } from "react-icons/ai";
+import Testimony from "../components/Testimony";
 
 const faqs = [
   {
@@ -39,6 +40,7 @@ function Home() {
       <Services />
       <Projects />
       <FrequentlyAsked data={faqs} />
+      <Testimony />
     </div>
   );
 }
