@@ -41,6 +41,7 @@ function Home() {
       <Projects />
       <FrequentlyAsked data={faqs} />
       <Testimony />
+      <div className="py-8">kaleab</div>
     </div>
   );
 }
