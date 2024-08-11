@@ -4,7 +4,7 @@ import Button from "./Button";
 /* eslint-disable react/prop-types */
 const ServiceCard = ({ title, description, buttonText, image }) => {
   return (
-    <div className="relative group z-10 max-w-sm bg-white shadow-md rounded-lg overflow-hidden transition-all">
+    <div className="relative group z-10 max-w-sm bg-white shadow-md rounded-lg overflow-hidden transition-all border">
       <div className="relative z-10 p-6 group-hover:cursor-pointer">
         <div className="flex justify-center mb-4">
           <img src={image} alt={title} className="h-[50px] w-[50px]" />

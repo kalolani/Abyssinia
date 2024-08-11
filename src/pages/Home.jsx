@@ -8,6 +8,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { MdSecurity } from "react-icons/md";
 import { AiOutlineSecurityScan } from "react-icons/ai";
 import Testimony from "../components/Testimony";
+import Blogs from "../components/Blogs";
 
 const faqs = [
   {
@@ -41,7 +42,8 @@ function Home() {
       <Projects />
       <FrequentlyAsked data={faqs} />
       <Testimony />
-      <div className="py-8">kaleab</div>
+      {/* <div className="py-8">kaleab</div> */}
+      <Blogs />
     </div>
   );
 }
