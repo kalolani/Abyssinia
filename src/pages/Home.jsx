@@ -9,6 +9,7 @@ import { MdSecurity } from "react-icons/md";
 import { AiOutlineSecurityScan } from "react-icons/ai";
 import Testimony from "../components/Testimony";
 import Blogs from "../components/Blogs";
+import Footer from "../components/Footer";
 
 const faqs = [
   {
@@ -44,6 +45,7 @@ function Home() {
       <Testimony />
       {/* <div className="py-8">kaleab</div> */}
       <Blogs />
+      <Footer />
     </div>
   );
 }

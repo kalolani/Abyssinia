@@ -111,7 +111,7 @@ const BlogCard = () => {
             </p>
           </div>
 
-          <h2 className="px-[1px] py-4 capitalize text-primary font-colasta text-primary text-[17px] text-left align-middle break-normal font-semibold hover:cursor-pointer hover:text-btn-main hover:text-btn-bg-main transition-all duration-[300ms]">
+          <h2 className="px-[2px] py-4 capitalize text-primary font-colasta text-primary text-[17px] text-left align-middle break-normal font-semibold hover:cursor-pointer hover:text-btn-main hover:text-btn-bg-main transition-all duration-[300ms]">
             {item.title}
           </h2>
         </div>

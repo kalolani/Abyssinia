@@ -52,7 +52,7 @@ function Testimony() {
         <div className="absolute left-[8%] top-[65%]">
           <img src="zirkzee.png" className="block w-[60px] h-[60px]" />
         </div>
-        <div className="absolute left-[20%] top-[85%]">
+        <div className="absolute left-[20%] top-[80%]">
           <img src="ronaldo.png" className="block w-[82px] h-[82px]" />
         </div>
         <div className="absolute right-[15%] top-[35%]">
@@ -61,9 +61,10 @@ function Testimony() {
         <div className="absolute right-[8%] top-[65%]">
           <img src="kobe.png" className="block w-[60px] h-[60px]" />
         </div>
-        <div className="absolute right-[20%] top-[85%]">
+        <div className="absolute right-[20%] top-[80%]">
           <img src="sancho.png" className="block w-[82px] h-[82px]" />
         </div>
+        <p className="p-8 opacity-0 inline-block">kaleab</p>
       </div>
     </>
   );

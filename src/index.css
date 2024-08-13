@@ -116,9 +116,12 @@
   color: inherit;
   transform: rotateX(90deg);
 }
-
 .slick-track {
   display: flex;
   /* grid-template-columns: repeat(3, 1fr); */
   gap: 30px;
+}
+
+.slick-dots {
+  bottom: -45px;
 }

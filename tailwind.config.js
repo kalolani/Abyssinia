@@ -4,6 +4,11 @@ export default {
   mode: "jit",
   theme: {
     extend: {
+      backgroundImage: {
+        "footer-image": "url('footer-bg.png')",
+        "car-image": "url('car.png')",
+        "bike-image": "url('bike.png')",
+      },
       fontFamily: {
         colasta: ["colasta", "sans-serif"],
         dm: ["DM Sans", "sans-serif"],
