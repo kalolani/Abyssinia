@@ -54,6 +54,30 @@
   }
 }
 
+@keyframes car {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes bike {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.car {
+  @apply animate-car;
+}
+.bike {
+  @apply animate-bike;
+}
+
 .wc-y-anim {
   @apply animate-wc-y-anim;
 }

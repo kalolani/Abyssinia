@@ -7,8 +7,8 @@ function Footer() {
     <>
       <div className="relative pt-[120px] pb-[270px] bg-[#fbfbfd]">
         <div className="absolute z-[0] bottom-0 w-full h-[266px] bg-footer-image bg-cover bg-no-repeat bg-scroll bg-left">
-          <div className="absolute bottom-0 left-[30%] w-[100px] h-[55px] bg-car-image bg-no-repeat bg-center"></div>
-          <div className="absolute z-[1] bottom-0 left-[58%] w-[100px] h-[100px] bg-bike-image bg-no-repeat bg-center"></div>
+          <div className="absolute bottom-0 left-[30%] w-[100px] h-[55px] bg-car-image bg-no-repeat bg-center car"></div>
+          <div className="absolute z-[1] bottom-0 left-[38%] w-[100px] h-[90px] bg-bike-image bg-no-repeat bg-center bike"></div>
         </div>
         <div className="max-w-[1070px] m-auto grid grid-cols-4 items-start justify-center gap-12">
           <div className="flex flex-col gap-6 justify-center items-start ">

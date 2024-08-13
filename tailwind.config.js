@@ -41,6 +41,8 @@ export default {
       animation: {
         "wc-y-anim": "wc-y-anim 5s ease-in-out infinite alternate",
         cube: "cube 3s ease-in-out infinite alternate",
+        car: "car 22s linear infinite",
+        bike: "bike 30s linear infinite",
         "bubble-one": "bubble-one 2s ease-in-out infinite alternate",
         "bubble-two": "bubble-two 3s ease infinite alternate",
       },
@@ -53,6 +55,14 @@ export default {
         cube: {
           "0%": { transform: "translateY(7px)" },
           "100%": { transform: "translateY(35px)" },
+        },
+        car: {
+          "0%": { left: "-25%" },
+          "100%": { left: "100%" },
+        },
+        bike: {
+          "0%": { left: "-25%" },
+          "100%": { left: "100%" },
         },
         "bubble-one": {
           "0%": { transform: "translateY(0px)" },
