@@ -11,6 +11,7 @@ export default {
         "footer-image": "url('footer-bg.png')",
         "car-image": "url('car.png')",
         "bike-image": "url('bike.png')",
+        "basketball-image": "url('basketball.jpg')",
       },
       fontFamily: {
         colasta: ["colasta", "sans-serif"],

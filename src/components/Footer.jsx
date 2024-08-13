@@ -13,6 +13,7 @@ function Footer() {
         <div className="absolute z-[0] bottom-0 w-full h-[266px] bg-footer-image bg-cover bg-no-repeat bg-scroll bg-left">
           <div className="absolute bottom-0 left-[30%] w-[100px] h-[55px] bg-car-image bg-no-repeat bg-center car"></div>
           <div className="absolute z-[1] bottom-0 left-[38%] w-[100px] h-[90px] bg-bike-image bg-no-repeat bg-center bike"></div>
+          <div className="absolute z-[1] bottom-0 left-[28%] w-[150px] h-[210px] bg-basketball-image bg-no-repeat bg-center"></div>
         </div>
         <div className="max-w-[1070px] m-auto grid grid-cols-custom-layout items-start justify-center gap-12">
           <div className="flex flex-col gap-6 justify-center items-start ">
