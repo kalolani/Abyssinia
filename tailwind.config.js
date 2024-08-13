@@ -4,6 +4,9 @@ export default {
   mode: "jit",
   theme: {
     extend: {
+      gridTemplateColumns: {
+        "custom-layout": "1fr 0.5fr 1fr 1fr",
+      },
       backgroundImage: {
         "footer-image": "url('footer-bg.png')",
         "car-image": "url('car.png')",

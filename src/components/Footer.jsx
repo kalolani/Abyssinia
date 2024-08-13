@@ -1,6 +1,10 @@
-import { IoLocationOutline } from "react-icons/io5";
+import { IoLocationSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
+import { TiSocialFacebook } from "react-icons/ti";
+import { FaXTwitter } from "react-icons/fa6";
+import { SlSocialInstagram } from "react-icons/sl";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -10,7 +14,7 @@ function Footer() {
           <div className="absolute bottom-0 left-[30%] w-[100px] h-[55px] bg-car-image bg-no-repeat bg-center car"></div>
           <div className="absolute z-[1] bottom-0 left-[38%] w-[100px] h-[90px] bg-bike-image bg-no-repeat bg-center bike"></div>
         </div>
-        <div className="max-w-[1070px] m-auto grid grid-cols-4 items-start justify-center gap-12">
+        <div className="max-w-[1070px] m-auto grid grid-cols-custom-layout items-start justify-center gap-12">
           <div className="flex flex-col gap-6 justify-center items-start ">
             <h3 className="text-[25px] capitalize font-bold text-primary">
               newsletter
@@ -27,37 +31,37 @@ function Footer() {
             </button>
           </div>
           <div className="flex flex-col gap-4 justify-center items-start">
-            <h3 className="text-[25px] capitalize font-bold text-primary self-center">
+            <h3 className="text-[25px] capitalize font-bold text-primary self-start">
               explore
             </h3>
-            <ul className="flex flex-col gap-4 justify-center items-start self-center">
-              <li className="cursor-pointer">
-                <a className="capitalize text-secondary hover:shadow-md hover:text-btn-bg-main hover:rotate-6 transition-all duration-200">
+            <ul className="flex flex-col gap-4 justify-center items-start self-start">
+              <li className="cursor-pointer hover:shadow-md hover:rotate-[5deg] hover:scale-150 transition-all duration-200">
+                <a className="capitalize text-secondary hover:text-btn-bg-main">
                   home
                 </a>
               </li>
-              <li className="cursor-pointer">
+              <li className="cursor-pointer hover:shadow-md hover:rotate-[5deg] hover:scale-150 transition-all duration-200">
                 {" "}
                 <a className="capitalize text-secondary  hover:text-btn-bg-main transition-all duration-200">
-                  about us
+                  about
                 </a>
               </li>
-              <li className="cursor-pointer">
+              <li className="cursor-pointer hover:shadow-md hover:rotate-[5deg] hover:scale-150 transition-all duration-200">
                 {" "}
                 <a className="capitalize text-secondary  hover:text-btn-bg-main transition-all duration-200">
                   service
                 </a>
               </li>
-              <li className="cursor-pointer">
+              <li className="cursor-pointer hover:shadow-md hover:rotate-[5deg] hover:scale-150 transition-all duration-200">
                 {" "}
                 <a className="capitalize text-secondary  hover:text-btn-bg-main transition-all duration-200">
                   blogs
                 </a>
               </li>
-              <li className="cursor-pointer">
+              <li className="cursor-pointer hover:shadow-md hover:rotate-[5deg] hover:scale-150 transition-all duration-200">
                 {" "}
                 <a className="capitalize text-secondary  hover:text-btn-bg-main transition-all duration-200">
-                  contact us
+                  contact
                 </a>
               </li>
             </ul>
@@ -67,13 +71,14 @@ function Footer() {
               contact info
             </h3>
             <ul className="flex flex-col gap-4 justify-center items-start">
-              <li className="flex items-center justify-start gap-4">
-                <IoLocationOutline
+              <li className="flex items-center gap-4">
+                <IoLocationSharp
                   color="#ff845d"
-                  size={70}
-                  className="self-start -mt-[20px]"
+                  size={55}
+                  className="self-start -mt-[15px]"
                 />
-                <p className="text-secondary pr-4">
+
+                <p className="text-secondary">
                   Addis Ababa, Bole Wollo Sefer,gorgoriwos Adebabay infront of
                   Tsedey Bank 242 Building 4th floor
                 </p>
@@ -105,16 +110,42 @@ function Footer() {
               with free upgrading, technical support, free training, and free
               maintenance.
             </p>
+            <div className="flex flex-col gap-4">
+              <p className="text-secondary text-[20px]">follow us on:</p>
+              <ul className="flex gap-6">
+                <li className="group p-2 rounded-3xl border border-btn-bg-main hover:cursor-pointer hover:bg-btn-bg-main transition-all duration-200">
+                  <a>
+                    <FaLinkedinIn className="text-secondary group-hover:text-[#fff] transition-all duration-200" />
+                  </a>
+                </li>
+
+                <li className="group p-2 rounded-3xl border border-btn-bg-main hover:cursor-pointer hover:bg-btn-bg-main transition-all duration-200">
+                  <a>
+                    <FaXTwitter className="text-secondary group-hover:text-[#fff] transition-all duration-200" />
+                  </a>
+                </li>
+                <li className="group p-2 rounded-3xl border border-btn-bg-main hover:cursor-pointer hover:bg-btn-bg-main transition-all duration-200">
+                  <a>
+                    <SlSocialInstagram className="text-secondary group-hover:text-[#fff] transition-all duration-200" />
+                  </a>
+                </li>
+                <li className="group p-2 rounded-3xl border border-btn-bg-main hover:cursor-pointer hover:bg-btn-bg-main transition-all duration-200">
+                  <a>
+                    <TiSocialFacebook className="text-secondary group-hover:text-[#fff] transition-all duration-200" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <div className="pt-[5px] pb-[50px] bg-[#fbfbfd]">
         <div className="flex items-center justify-between px-16">
           {" "}
-          <div className="capitalize text-btn-bg-main">
+          <div className="capitalize text-[#6a7695]">
             &copy; Abyssinia Software, All rights reserved.
           </div>
-          <div className="capitalize text-btn-bg-main">
+          <div className="capitalize text-[#6a7695]">
             designed by Abyssinia software
           </div>
         </div>
