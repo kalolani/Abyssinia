@@ -21,7 +21,8 @@ const Link = ({
   };
 
   const sizeStyles = {
-    sm: "px-3 py-1 text-sm",
+    esm: "px-3 py-[0px] text-sm",
+    sm: "px-3 py-[0px] text-md",
     md: "px-4 py-2 text-md",
     lg: "px-6 py-3 text-lg",
   };
@@ -55,7 +56,7 @@ Link.propTypes = {
   children: PropTypes.node.isRequired,
   href: PropTypes.string,
   variant: PropTypes.oneOf(["primary", "secondary", "danger"]),
-  size: PropTypes.oneOf(["sm", "md", "lg"]),
+  size: PropTypes.oneOf(["sm", "md", "lg", "esm"]),
   disabled: PropTypes.bool,
   className: PropTypes.string,
 };

@@ -149,3 +149,13 @@
 .slick-dots {
   bottom: -45px;
 }
+
+.link-span:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}

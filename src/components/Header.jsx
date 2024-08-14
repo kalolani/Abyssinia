@@ -3,7 +3,7 @@ import PageNav from "./PageNav";
 
 function Header() {
   return (
-    <div className="relative bg-gradient-to-b from-[#FBF7F4] to-[#fbf7f400] ">
+    <div className="relative h-screen bg-gradient-to-b from-[#FBF7F4] to-[#fbf7f400] ">
       <PageNav />
 
       <div className="flex justify-center">
@@ -23,7 +23,7 @@ function Header() {
       <div className="flex justify-center items-center mt-10">
         <Button
           variant="primary"
-          size="md"
+          size="lg"
           className="bg-btn-bg-main font-bold"
         >
           Apply now
