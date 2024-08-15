@@ -1,12 +1,13 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { FiPlus } from "react-icons/fi";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+import { fadeIn } from "../variants";
 function FrequentlyAsked({ data }) {
-  const [curOpen, setCurOpen] = useState(null);
+  const [curOpen, setCurOpen] = useState(data[0].image); // Initialize with the num of the first item
+
   return (
     <div className="py-[56px]">
       <div className="flex justify-center">
@@ -18,10 +19,16 @@ function FrequentlyAsked({ data }) {
         Get the Answers to Common Questions
       </h2>
       <div className="max-w-[1050px] grid grid-cols-2 items-start m-auto gap-14 pt-10">
-        <div className="w-[500px] flex flex-col gap-[24px]">
-          {data.map((item, i) => (
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="w-[500px] flex flex-col gap-[24px]"
+        >
+          {data.map((item) => (
             <AccordionItem
-              key={item}
+              key={item.image}
               num={item.image}
               title={item.title}
               curOpen={curOpen}
@@ -30,17 +37,24 @@ function FrequentlyAsked({ data }) {
               {item.text}
             </AccordionItem>
           ))}
-        </div>
-        <div className="grid">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="grid"
+        >
           <img
             src="her.png"
-            className="h-[100%] place-items-start -mt-[30px]"
+            className="w-full h-full place-items-start -mt-[30px]"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
 }
+
 export default FrequentlyAsked;
 
 function AccordionItem({ num, title, curOpen, setCurOpen, children }) {

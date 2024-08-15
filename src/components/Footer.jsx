@@ -5,6 +5,8 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { FaXTwitter } from "react-icons/fa6";
 import { SlSocialInstagram } from "react-icons/sl";
 import { FaLinkedinIn } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 function Footer() {
   return (
@@ -15,7 +17,13 @@ function Footer() {
           <div className="absolute z-[1] bottom-0 left-[38%] w-[100px] h-[90px] bg-bike-image bg-no-repeat bg-center bike"></div>
           <div className="absolute z-[1] bottom-0 left-[28%] w-[150px] h-[210px] bg-basketball-image bg-no-repeat bg-center"></div>
         </div>
-        <div className="max-w-[1070px] m-auto grid grid-cols-custom-layout items-start justify-center gap-12">
+        <motion.div
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }}
+          className="max-w-[1070px] m-auto grid grid-cols-custom-layout items-start justify-center gap-12"
+        >
           <div className="flex flex-col gap-6 justify-center items-start ">
             <h3 className="text-[25px] capitalize font-bold text-primary">
               newsletter
@@ -138,7 +146,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="pt-[5px] pb-[50px] bg-[#fbfbfd]">
         <div className="flex items-center justify-between px-16">

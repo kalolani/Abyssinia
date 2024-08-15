@@ -1,4 +1,6 @@
 import ProjectCard from "./ProjectCard";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 function Projects() {
   return (
@@ -23,7 +25,13 @@ function Projects() {
           className="absolute left-[50%] -top-[70px] -z-[1] -translate-x-2/4 transform rotate-y-[180deg] -translate-x-2/4"
         />
       </div>
-      <div className="relative z-[1] mt-[70px] grid grid-cols-3 max-w-[1150px] m-auto gap-8">
+      <motion.div
+        variants={fadeIn("up", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.5 }}
+        className="relative z-[1] mt-[70px] grid grid-cols-3 max-w-[1150px] m-auto gap-8"
+      >
         <ProjectCard
           image="mall.jpg"
           title="mall building information management system"
@@ -39,7 +47,7 @@ function Projects() {
           title="EPR system"
           description="A complete EPR system for factories and trading companies"
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

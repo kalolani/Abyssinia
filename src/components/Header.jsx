@@ -1,5 +1,7 @@
 import Button from "./Button";
 import PageNav from "./PageNav";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 function Header() {
   return (
@@ -11,16 +13,34 @@ function Header() {
           boost your productivity
         </p>
       </div>
-      <h1 className="font-colasta text-center text-6xl font-bold text-primary mt-4">
+      <motion.h1
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="font-colasta text-center text-6xl font-bold text-primary mt-4"
+      >
         Drive More Customers
         <br />
         Through Digital
-      </h1>
-      <p className="text-center text-[22px] text-secondary leading-[1.36] mt-4">
+      </motion.h1>
+      <motion.p
+        variants={fadeIn("right", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-center text-[22px] text-secondary leading-[1.36] mt-4"
+      >
         Specializing in custom software, we create innovative
         <br /> solutions to streamline operations and boost productivity.
-      </p>
-      <div className="flex justify-center items-center mt-10">
+      </motion.p>
+      <motion.div
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="flex justify-center items-center mt-10"
+      >
         <Button
           variant="primary"
           size="lg"
@@ -31,7 +51,7 @@ function Header() {
         <Button variant="secondary" size="lg" className="ml-4">
           Read more
         </Button>
-      </div>
+      </motion.div>
       <div className="absolute top-[70%] end-[-24%] z-[-1]">
         <img src="shape-03.webp" />
       </div>
@@ -43,7 +63,7 @@ function Header() {
       </div>
       <div className="absolute h-[10px] w-[10px] rounded-lg bg-[#00c99c] top-[40%] start-[5%] bubble-one z-[100]"></div>
       <div className="absolute h-[30px] w-[30px] rounded-2xl bg-[#fca249] top-[65%] start-[8%] bubble-two z-[100]"></div>
-      <div className="absolute h-[15px] w-[15px] rounded-2xl bg-[#7d95fa] top-[110%] start-[20%] bubble-two z-[100]"></div>
+      <div className="absolute h-[15px] w-[15px] rounded-2xl bg-[#7d95fa] top-[95%] start-[20%] bubble-two z-[100]"></div>
       <div className="absolute h-[30px] w-[30px] rounded-2xl bg-[#ff9398] top-[65%] end-[8%] bubble-two z-[100]"></div>
       <div className="absolute h-[15px] w-[15px] rounded-2xl bg-[#d27dfa] top-[40%] end-[5%] bubble-two z-[100]"></div>
     </div>

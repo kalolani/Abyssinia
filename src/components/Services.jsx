@@ -1,4 +1,6 @@
 import ServiceCard from "./ServiceCard";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 function Services() {
   return (
@@ -12,7 +14,13 @@ function Services() {
       <h1 className="text-primary font-bold text-center capitalize text-4xl my-6 mt-8">
         Offering the Best high quality Services
       </h1>
-      <div className="relative z-[11] max-w-[1150px] m-auto grid grid-cols-3 gap-8 pt-10 z-[10]">
+      <motion.div
+        variants={fadeIn("up", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.5 }}
+        className="relative z-[11] max-w-[1150px] m-auto grid grid-cols-3 gap-8 pt-10 z-[10]"
+      >
         <ServiceCard
           image="pc.png"
           title="website development"
@@ -49,9 +57,15 @@ function Services() {
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
+      </motion.div>
+      <div className="absolute top-[40%] start-[8%] z-[9]">
+        <img src="sefed.jpg" />
       </div>
-      <div className="absolute top-[40%] -start-[11%] z-[9]">
-        <img src="shape-02.webp" />
+      <div className="absolute top-[40%] start-[40%] z-[9]">
+        <img src="sefed.jpg" />
+      </div>
+      <div className="absolute top-[40%] end-[8%] z-[9]">
+        <img src="sefed.jpg" />
       </div>
       <div className="absolute top-[23%] -start-[5%] z-[9]">
         <img src="shape-01.webp" />
