@@ -11,7 +11,7 @@ const Link = ({
   ...props
 }) => {
   const baseStyles =
-    "tracking-wide inline-flex items-center justify-center whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 link text-[16px] font-bold leading-none capitalize transition-all duration-[300ms] bg-btn-bg-main hover:bg-primary rounded-[15px] perspective-1000 overflow-hidden z-[10000] gap-[30px] h-[50px] px-[25px] px-[16px]";
+    "tracking-wide inline-flex items-center justify-center whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 link text-[16px] phone:text-[16px] font-bold leading-none capitalize transition-all duration-[300ms] bg-btn-bg-main hover:bg-primary rounded-[15px] perspective-1000 overflow-hidden z-[10000] gap-[30px] h-[50px]";
 
   const variantStyles = {
     primary:

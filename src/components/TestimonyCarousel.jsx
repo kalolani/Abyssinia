@@ -82,10 +82,10 @@ const TestimonialCarousel = () => {
         <Slider {...settings}>
           {testimony.map((item, index) => (
             <div key={index} className="">
-              <div className="max-w-[800px] m-auto flex flex-col gap-6 items-center justify-center">
+              <div className="max-w-[800px] tablet:max-w-[600px] btablet:max-w-[700px] laptop:max-w-[800px] m-auto flex flex-col gap-6 items-center justify-center">
                 <div>{item.qoute}</div>
                 <div>
-                  <p className="text-primary text-[17px] text-center capitalize">
+                  <p className="text-primary text-[17px] phone:text-[12px] mdphone:text-[13px] mtab:text-[14px] tablet:text-[15px] btablet:text-[16px] laptop:text-[17px] text-center capitalize px-4">
                     {item.text}
                   </p>
                 </div>

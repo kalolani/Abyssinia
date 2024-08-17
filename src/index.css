@@ -145,6 +145,17 @@
   /* grid-template-columns: repeat(3, 1fr); */
   gap: 30px;
 }
+@media (min-width: 320px) {
+  .slick-track {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .slick-track {
+    display: flex;
+    gap: 30px;
+  }
+}
 
 .slick-dots {
   bottom: -45px;

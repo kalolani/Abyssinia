@@ -92,7 +92,7 @@ const BlogCard = () => {
       {content.map((item, i) => (
         <div
           key="i"
-          className="group z-10 max-w-sm m-auto rounded-t-lg rounded-b-lg overflow-hidden transition-all"
+          className="group z-10 max-w-sm m-auto rounded-t-lg rounded-b-lg overflow-hidden transition-all px-4"
         >
           <div className="rounded-lg rounded-b-lg overflow-hidden h-3/5">
             <img

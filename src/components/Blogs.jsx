@@ -22,7 +22,7 @@ function Blogs() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.5 }}
-        className="text-primary font-bold text-center capitalize text-4xl my-6 mt-8"
+        className="text-primary font-bold text-center capitalize text-4xl phone:text-2xl tablet:text-3xl laptop:text-4xl my-6 mt-8"
       >
         Latest Articles & News from the Blogs
       </motion.h1>

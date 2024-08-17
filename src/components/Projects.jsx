@@ -10,7 +10,7 @@ function Projects() {
           our projects
         </p>
       </div>
-      <h1 className="text-primary font-bold text-center capitalize text-4xl my-6 mt-8">
+      <h1 className="text-primary font-bold text-center capitalize text-4xl phone:text-xl mtab:text-2xl btablet:text-3xl laptop:text-4xl my-6 mt-8">
         Explore Our Latest Projects
       </h1>
       <div className="relative z-[1]">
@@ -29,8 +29,8 @@ function Projects() {
         variants={fadeIn("up", 0.4)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.5 }}
-        className="relative z-[1] mt-[70px] grid grid-cols-3 max-w-[1150px] m-auto gap-8"
+        viewport={{ once: false, amount: 0.5 }}
+        className="relative z-[1] mt-[70px] grid grid-cols-3 phone:grid-cols-1 phone:justify-items-center mtab:grid-cols-2 laptop:grid-cols-3 laptop:justify-items-stretch max-w-[1150px] m-auto gap-8 px-4"
       >
         <ProjectCard
           image="mall.jpg"

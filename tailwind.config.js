@@ -6,7 +6,9 @@ export default {
     extend: {
       gridTemplateColumns: {
         "custom-layout": "1fr 0.5fr 1fr 1fr",
+        tablet: "1fr 0.5fr 1fr",
       },
+
       backgroundImage: {
         "footer-image": "url('footer-bg.png')",
         "car-image": "url('car.png')",
@@ -77,6 +79,24 @@ export default {
           "100%": { transform: "scale(1.5)" },
         },
       },
+    },
+    screens: {
+      phone: "320px",
+      // => @media (min-width: 640px) { ... }
+      mdphone: "400px",
+      ptab: "500px",
+      mtab: "650px",
+      tablet: "768px",
+      // => @media (min-width: 768px) { ... }
+      btablet: "850px",
+
+      laptop: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      desktop: "1200px",
+      // => @media (min-width: 1280px) { ... }
+
+      bigdesktop: "1536px",
     },
   },
   plugins: [],
