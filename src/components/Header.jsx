@@ -9,7 +9,7 @@ function Header() {
       {" "}
       <PageNav />
       <div className="flex justify-center">
-        <p className="capitalize text-center text-secondary text-[14px] font-medium py-2 px-[11px] rounded-[5px] bg-gradient-to-r from-[#FEE7C4] to-[#BEE5E4] mt-32 phone:mt-12 mtab:mt-24 tablet:mt-28 laptop:mt-32">
+        <p className="capitalize text-center text-secondary text-[14px] font-medium py-2 px-[11px] rounded-[5px] bg-gradient-to-r from-[#FEE7C4] to-[#BEE5E4] mt-32 phone:mt-17 mtab:mt-24 tablet:mt-28 laptop:mt-32">
           boost your productivity
         </p>
       </div>

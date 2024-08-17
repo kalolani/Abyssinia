@@ -5,88 +5,104 @@ import { GrUserAdmin } from "react-icons/gr";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 700,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-
-  customPaging: (i) => <button className="custom-dot px-64">{i + 1}</button>,
-};
-
-const content = [
-  {
-    // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-    img: "software.jpg",
-    calanderIcon: (
-      <VscCalendar className="hover:cursor-pointer hover:fill-btn-bg-main transition-all duration-[300ms]" />
-    ),
-    adminIcon: (
-      <GrUserAdmin className="hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]" />
-    ),
-    date: "8 11 2024",
-    name: "admin",
-    title: "Abyssinia Software Solutions Launches New Innovative Software",
-  },
-  {
-    // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-    img: "school management.jpg",
-    calanderIcon: (
-      <VscCalendar className="hover:cursor-pointer hover:fill-btn-bg-main transition-all duration-[300ms]" />
-    ),
-    adminIcon: (
-      <GrUserAdmin className="hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]" />
-    ),
-    date: "8 11 2024",
-    name: "admin",
-    title: "Special Discount on School Management System Subscriptions",
-  },
-  {
-    // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-    img: "EPR.jpg",
-    calanderIcon: (
-      <VscCalendar className="hover:cursor-pointer hover:fill-btn-bg-main transition-all duration-[300ms]" />
-    ),
-    adminIcon: (
-      <GrUserAdmin className="hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]" />
-    ),
-    date: "8 11 2024",
-    name: "admin",
-    title: "Get 50% Off on ERP System Subscriptions for One Month!",
-  },
-  {
-    // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-    img: "software.jpg",
-    calanderIcon: (
-      <VscCalendar className="hover:cursor-pointer hover:fill-btn-bg-main transition-all duration-[300ms]" />
-    ),
-    adminIcon: (
-      <GrUserAdmin className="hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]" />
-    ),
-    date: "8 11 2024",
-    name: "admin",
-    title: "Abyssinia Software Solutions Launches New Innovative Software",
-  },
-  {
-    // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-    img: "school management.jpg",
-    calanderIcon: (
-      <VscCalendar className="hover:cursor-pointer hover:fill-btn-bg-main transition-all duration-[300ms]" />
-    ),
-    adminIcon: (
-      <GrUserAdmin className="hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]" />
-    ),
-    date: "8 11 2024",
-    name: "admin",
-    title: "Special Discount on School Management System Subscriptions",
-  },
-];
+import { useMediaQuery } from "react-responsive";
+import { useEffect, useState } from "react";
 
 /* eslint-disable react/prop-types */
 const BlogCard = () => {
+  const isSmallScreen = useMediaQuery({ maxWidth: 640 });
+  const isMediumScreen = useMediaQuery({ minWidth: 641, maxWidth: 1024 });
+  const isLargeScreen = useMediaQuery({ minWidth: 1025 });
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+    if (isSmallScreen) {
+      setSlidesToShow(1);
+    } else if (isMediumScreen) {
+      setSlidesToShow(2);
+    } else if (isLargeScreen) {
+      setSlidesToShow(3);
+    }
+  }, [isSmallScreen, isMediumScreen, isLargeScreen]);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 700,
+    slidesToShow: slidesToShow,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+
+    customPaging: (i) => <button className="custom-dot px-64">{i + 1}</button>,
+  };
+  const content = [
+    {
+      // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
+      img: "software.jpg",
+      calanderIcon: (
+        <VscCalendar className="hover:cursor-pointer hover:fill-btn-bg-main transition-all duration-[300ms]" />
+      ),
+      adminIcon: (
+        <GrUserAdmin className="hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]" />
+      ),
+      date: "8 11 2024",
+      name: "admin",
+      title: "Abyssinia Software Solutions Launches New Innovative Software",
+    },
+    {
+      // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
+      img: "school management.jpg",
+      calanderIcon: (
+        <VscCalendar className="hover:cursor-pointer hover:fill-btn-bg-main transition-all duration-[300ms]" />
+      ),
+      adminIcon: (
+        <GrUserAdmin className="hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]" />
+      ),
+      date: "8 11 2024",
+      name: "admin",
+      title: "Special Discount on School Management System Subscriptions",
+    },
+    {
+      // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
+      img: "EPR.jpg",
+      calanderIcon: (
+        <VscCalendar className="hover:cursor-pointer hover:fill-btn-bg-main transition-all duration-[300ms]" />
+      ),
+      adminIcon: (
+        <GrUserAdmin className="hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]" />
+      ),
+      date: "8 11 2024",
+      name: "admin",
+      title: "Get 50% Off on ERP System Subscriptions for One Month!",
+    },
+    {
+      // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
+      img: "software.jpg",
+      calanderIcon: (
+        <VscCalendar className="hover:cursor-pointer hover:fill-btn-bg-main transition-all duration-[300ms]" />
+      ),
+      adminIcon: (
+        <GrUserAdmin className="hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]" />
+      ),
+      date: "8 11 2024",
+      name: "admin",
+      title: "Abyssinia Software Solutions Launches New Innovative Software",
+    },
+    {
+      // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
+      img: "school management.jpg",
+      calanderIcon: (
+        <VscCalendar className="hover:cursor-pointer hover:fill-btn-bg-main transition-all duration-[300ms]" />
+      ),
+      adminIcon: (
+        <GrUserAdmin className="hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]" />
+      ),
+      date: "8 11 2024",
+      name: "admin",
+      title: "Special Discount on School Management System Subscriptions",
+    },
+  ];
   return (
     <Slider {...settings}>
       {content.map((item, i) => (

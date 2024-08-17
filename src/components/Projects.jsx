@@ -22,7 +22,7 @@ function Projects() {
           height="709"
           decoding="async"
           data-nimg="1"
-          className="absolute left-[50%] -top-[70px] -z-[1] -translate-x-2/4 transform rotate-y-[180deg] -translate-x-2/4"
+          className="absolute left-[50%] -top-[70px] -z-[1] -translate-x-2/4 transform rotate-y-[180deg] -translate-x-2/4 phone:opacity-0 laptop:opacity-100"
         />
       </div>
       <motion.div
@@ -30,7 +30,7 @@ function Projects() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.5 }}
-        className="relative z-[1] mt-[70px] grid grid-cols-3 phone:grid-cols-1 phone:justify-items-center mtab:grid-cols-2 laptop:grid-cols-3 laptop:justify-items-stretch max-w-[1150px] m-auto gap-8 px-4"
+        className="relative z-[1] mt-[70px] phone:mt-[10px] mdphone:mt-[15px] ptab:mt-[20px] mtab:mt-[35px] tablet:mt-[50px] btablet:mt-[60px] laptop:mt-[70px] grid grid-cols-3 phone:grid-cols-1 phone:justify-items-center mtab:grid-cols-2 mtab:justify-items-stretch laptop:grid-cols-3 max-w-[1150px] m-auto gap-8 px-4"
       >
         <ProjectCard
           image="mall.jpg"

@@ -30,7 +30,7 @@ function PageNav() {
           Abyssinia software solution
         </p>
       </div>
-      <ul className="flex gap-8 justify-center items-center mr-14 visible phone:invisible laptop:visible">
+      <ul className="flex gap-8 justify-center items-center mr-14 visible phone:hidden laptop:visible">
         <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-all duration-200">
           <a className="before:inline-block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]">
             Home
@@ -63,7 +63,7 @@ function PageNav() {
           </a>
         </li>
       </ul>
-      <div className="phone:invisible laptop:visible">
+      <div className="phone:hidden laptop:visible">
         <Button variant="primary" size="sm">
           contact
         </Button>

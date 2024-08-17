@@ -14,7 +14,7 @@ const ProjectCard = ({ title, description, buttonText, image }) => {
           <img
             src={image}
             alt={title}
-            className="block relative -z-[1000] h-[18rem] w-[100%]"
+            className="block relative -z-[1000] h-[18rem] w-full"
           />
           <div className="absolute top-[5%] left-[5%] py-4 w-[90%] bg-white opacity-0 shadow-lg rounded-t-lg rounded-b-lg scale-50 group-hover:scale-100 group-hover:backface-hidden group-hover:opacity-100 transition-all duration-300 will-change-transform">
             {" "}
