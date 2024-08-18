@@ -5,20 +5,18 @@ function Navbar() {
   return (
     <>
       <div
-        className={`fixed top-[5.6rem] right-0 bg-custom-radial z-[1000] rounded-[50%] transition-all duration-[800ms] ${
-          isOpen
-            ? "opacity-100 scale-150 w-screen h-screen"
-            : "opacity-0 scale-0"
+        className={`fixed top-10 right-10 w-8 h-8 scale-0 bg-[#072032] z-[1000] rounded-[50%] transition-all duration-[800ms] ${
+          isOpen ? "scale-[1000]" : "scale-0"
         }`}
       >
         &nbsp;
       </div>
       <nav
-        className={`fixed top-0 left-0 h-screen z-[2000] ${
-          isOpen ? "opacity-100 w-full" : "opacity-0 width-0"
+        className={`fixed top-0 -translate-x-full h-0 w-full z-[2000] transition-all duration-[500ms] ${
+          isOpen ? "w-full h-screen translate-x-0" : ""
         }`}
       >
-        <ul className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+        <ul className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-left">
           <li className="list-none">
             <a
               href="#"
