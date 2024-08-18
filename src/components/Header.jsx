@@ -2,14 +2,16 @@ import Button from "./Button";
 import PageNav from "./PageNav";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import Navbar from "./Navbar";
 
 function Header() {
   return (
     <div className="relative h-screen bg-gradient-to-b from-[#FBF7F4] to-[#fbf7f400] overflow-hidden">
       {" "}
       <PageNav />
+      <Navbar />
       <div className="flex justify-center">
-        <p className="capitalize text-center text-secondary text-[14px] font-medium py-2 px-[11px] rounded-[5px] bg-gradient-to-r from-[#FEE7C4] to-[#BEE5E4] mt-32 phone:mt-17 mtab:mt-24 tablet:mt-28 laptop:mt-32">
+        <p className="capitalize text-center text-secondary text-[14px] font-medium py-2 px-[11px] rounded-[5px] bg-gradient-to-r from-[#FEE7C4] to-[#BEE5E4] mt-32 phone:mt-20 mtab:mt-24 tablet:mt-28 laptop:mt-32">
           boost your productivity
         </p>
       </div>
@@ -39,7 +41,7 @@ function Header() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="relative z-[1000] flex justify-center items-center mt-10"
+        className="relative z-[999] flex justify-center items-center mt-10 phone:mt-6 tablet:mt-6 laptop:mt-10"
       >
         <Button
           variant="primary"

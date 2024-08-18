@@ -3,6 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   mode: "jit",
   theme: {
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "230%": "230%",
+      16: "4rem",
+    },
     extend: {
       gridTemplateColumns: {
         "custom-layout": "1fr 0.5fr 1fr 1fr",

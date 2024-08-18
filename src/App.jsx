@@ -1,10 +1,13 @@
 import Home from "./pages/Home";
+import { StoreProvider } from "./contexts/storeContext";
 
 function App() {
   return (
-    <div className="">
-      <Home />
-    </div>
+    <StoreProvider>
+      <div className="">
+        <Home />
+      </div>
+    </StoreProvider>
   );
 }
 

@@ -22,9 +22,9 @@ function Footer() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.5 }}
-          className="max-w-[1070px] m-auto grid grid-cols-custom-layout phone:grid-cols-1 phone:justify-center tablet:grid-cols-tablet laptop:grid-cols-custom-layout items-start justify-center gap-12 px-4"
+          className="max-w-[1150px] m-auto grid grid-cols-custom-layout phone:grid-cols-1 phone:justify-center tablet:grid-cols-2 btablet:grid-cols-tablet laptop:grid-cols-custom-layout items-start justify-center gap-12 px-4"
         >
-          <div className="flex flex-col gap-6 justify-center items-start phone:items-center laptop:items-start">
+          <div className="flex flex-col gap-6 justify-center items-start phone:items-center tablet:items-start laptop:items-start">
             <h3 className="text-[25px] capitalize font-bold text-primary">
               newsletter
             </h3>
@@ -40,10 +40,10 @@ function Footer() {
             </button>
           </div>
           <div className="flex flex-col gap-4 justify-center items-start">
-            <h3 className="text-[25px] capitalize font-bold text-primary self-start phone:self-center laptop:self-start">
+            <h3 className="text-[25px] capitalize font-bold text-primary self-start phone:self-center tablet:self-start laptop:self-start">
               explore
             </h3>
-            <ul className="flex flex-col gap-4 justify-center items-start self-start phone:self-center laptop:self-start">
+            <ul className="flex flex-col gap-4 justify-center items-start self-start phone:self-center tablet:self-start laptop:self-start">
               <li className="cursor-pointer hover:shadow-md hover:rotate-[5deg] hover:scale-150 transition-all duration-200">
                 <a className="capitalize text-secondary hover:text-btn-bg-main">
                   home
@@ -75,11 +75,11 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4 justify-center items-start phone:items-center laptop:items-start">
+          <div className="flex flex-col gap-4 justify-center items-start phone:items-center tablet:items-start laptop:items-start">
             <h3 className="text-[25px] capitalize font-bold text-primary">
               contact info
             </h3>
-            <ul className="flex flex-col gap-4 justify-center items-start phone:items-center laptop:items-start">
+            <ul className="flex flex-col gap-4 justify-center items-start phone:items-center tablet:items-start laptop:items-start">
               <li className="flex items-center gap-4">
                 <IoLocationSharp
                   color="#ff845d"
@@ -110,11 +110,11 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4 justify-center items-start phone:items-center laptop:items-start">
+          <div className="flex flex-col gap-4 justify-center items-start phone:items-center tablet:items-start laptop:items-start">
             <h3 className="text-[25px] capitalize font-bold text-primary">
               subscription
             </h3>
-            <p className="text-secondary phone:text-center laptop:text-left">
+            <p className="text-secondary phone:text-center tablet:text-left laptop:text-left">
               Subscribe to our SAS service to get business software at low price
               with free upgrading, technical support, free training, and free
               maintenance.

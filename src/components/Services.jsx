@@ -4,7 +4,7 @@ import { fadeIn } from "../variants";
 
 function Services() {
   return (
-    <div className="relative bg-[#FBF7F4] mt-16 phone:mt-2 mdphone:mt-4 mtab:mt-6 tablet:mt-8 btablet:mt-10 laptop:mt-16 py-16 phone:py-8 mtab:py-10 tablet:py-12 btablet:py-14 laptop:py-16">
+    <div className="relative bg-[#FBF7F4] mt-16 phone:mt-2 mdphone:mt-4 mtab:mt-6 tablet:mt-8 btablet:mt-10 laptop:mt-0 py-16 phone:py-8 mtab:py-10 tablet:py-12 btablet:py-14 laptop:py-16">
       <div className="flex justify-center">
         <motion.p
           variants={fadeIn("right", 0.4)}
