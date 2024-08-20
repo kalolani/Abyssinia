@@ -1,9 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react";
 import Button from "./Button";
 import { MdMenu } from "react-icons/md";
 import { useMediaQuery } from "react-responsive";
 import { useStores } from "../contexts/storeContext";
 import { IoCloseOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function PageNav() {
   const [isSticky, setIsSticky] = useState(false);
@@ -74,9 +76,12 @@ function PageNav() {
           </a>
         </li>
         <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
-          <a className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]">
+          <Link
+            to="/about"
+            className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
+          >
             about
-          </a>
+          </Link>
         </li>
         <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
           <a className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]">
@@ -91,7 +96,7 @@ function PageNav() {
       </ul>
       <div className={`${isHidden ? "" : "hidden"}`}>
         <Button variant="primary" size="sm">
-          contact
+          let's talk!
         </Button>
       </div>
     </div>
