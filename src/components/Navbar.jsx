@@ -12,8 +12,8 @@ function Navbar() {
         &nbsp;
       </div>
       <nav
-        className={`fixed top-1/2 phone:left-[5%] mdphone:left-[15%] mtab:left-[25%] tablet:left-[28%]  -translate-x-full h-0 w-full z-[2000] text-center transition-all duration-[800ms] ${
-          isOpen ? "w-full h-screen translate-x-0 " : ""
+        className={`fixed top-1/2 phone:left-[5%] mdphone:left-[15%] mtab:left-[25%] tablet:left-[28%] -translate-x-[200%] h-0 w-full z-[2000] text-center transition-all duration-[800ms] ${
+          isOpen ? "w-full h-screen translate-x-[0%] " : ""
         }`}
       >
         <ul className="absolute w-full top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-left">
