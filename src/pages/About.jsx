@@ -64,43 +64,43 @@ function About() {
         <div className="m-auto max-w-[1060px] grid grid-cols-4 gap-8 items-center justify-items-center mt-14">
           <AboutCard
             image="kaleab.jpg"
-            title="kaleab gemechu"
-            description="frontend developer"
+            name="kaleab gemechu"
+            occupation="frontend developer"
           />
           <AboutCard
             image="kaleab.jpg"
-            title="kaleab gemechu"
-            description="frontend developer"
+            name="kaleab gemechu"
+            occupation="frontend developer"
           />
           <AboutCard
             image="kaleab.jpg"
-            title="kaleab gemechu"
-            description="frontend developer"
+            name="kaleab gemechu"
+            occupation="frontend developer"
           />
           <AboutCard
             image="kaleab.jpg"
-            title="kaleab gemechu"
-            description="frontend developer"
+            name="kaleab gemechu"
+            occupation="frontend developer"
           />
           <AboutCard
             image="kaleab.jpg"
-            title="kaleab gemechu"
-            description="frontend developer"
+            name="kaleab gemechu"
+            occupation="frontend developer"
           />
           <AboutCard
             image="kaleab.jpg"
-            title="kaleab gemechu"
-            description="frontend developer"
+            name="kaleab gemechu"
+            occupation="frontend developer"
           />
           <AboutCard
             image="kaleab.jpg"
-            title="kaleab gemechu"
-            description="frontend developer"
+            name="kaleab gemechu"
+            occupation="frontend developer"
           />
           <AboutCard
             image="kaleab.jpg"
-            title="kaleab gemechu"
-            description="frontend developer"
+            name="kaleab gemechu"
+            occupation="frontend developer"
           />
         </div>
       </div>

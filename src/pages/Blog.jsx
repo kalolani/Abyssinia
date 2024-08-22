@@ -33,7 +33,8 @@ function Blog() {
               viewport={{ once: false, amount: 0.7 }}
               className="text-center text-[22px] phone:text-[18px] mdphone:text-[18px] ptab:text-[19px] mtab:text-[20px] tablet:[22px] text-tertiary leading-[1.36] mt-4  px-4"
             >
-              Get the latest news from us
+              Welcome to our blog, where we explore the latest trends, tips,
+              <br /> and insights in web development, design, and technology.
             </motion.p>
           </div>
         </div>
@@ -56,9 +57,8 @@ function Blog() {
           viewport={{ once: false, amount: 0.7 }}
           className="text-center text-[22px] phone:text-[18px] mdphone:text-[18px] ptab:text-[19px] mtab:text-[20px] tablet:[15px] tablet:text-[18px] text-secondary leading-[1.36] mt-4  px-4"
         >
-          A great team is the backbone of a successful software company.
-          <br />
-          turning code into innovation and challenges into achievements.
+          Welcome to our blog, where we explore the latest trends, tips,
+          <br /> and insights in web development, design, and technology.
         </motion.p>
         <div className="mt-20">
           <BlogCard />

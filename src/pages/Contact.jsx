@@ -10,7 +10,7 @@ function Contact() {
   return (
     <div>
       {" "}
-      <div className="relative bg-custom-linear h-[92vh] w-full">
+      <div className="relative bg-custom-linear h-[92vh] w-full overflow-hidden">
         <PageNav />
         <Navbar />
         <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -38,18 +38,19 @@ function Contact() {
         </div>
       </div>
       <div
-        className="max-w-[1000px] m-auto py-[40px] grid grid-cols-2 items-center justify-items-center px-4"
+        className="max-w-[1000px] m-auto py-[40px] grid phone:grid-cols-1 mtab:grid-cols-2 items-center justify-items-center px-4"
         id="contact"
       >
-        <div className="w-full">
-          <form onSubmit="">
-            <div className="name-container">
+        <div className="w-full phone:flex phone:justify-center ptab:flex-none ptab:flex-none">
+          <form onSubmit="" className="w-full w-3/6 phone:w-full">
+            <div className="">
               <label
                 htmlFor="name"
                 className="block text-primary mb-[10px] text-[20px]"
               >
                 name
               </label>
+
               <input
                 name="name"
                 type="text"
@@ -89,10 +90,11 @@ function Contact() {
               ></textarea>
             </div>
 
-            <div className="contact-btn-container">
+            <div className="flex ">
+              {" "}
               <button
                 type="submit"
-                className="bg-btn-bg-main text-tertiary hover:bg-transparent hover:text-btn-bg-main font-semibold capitalize border px-4 py-2 rounded-[2px] border-btn-bg-main flex items-center mr-0 "
+                className="inline-block bg-btn-bg-main place-self-center text-tertiary hover:bg-transparent hover:text-btn-bg-main font-semibold capitalize border px-4 py-2 rounded-[2px] border-btn-bg-main flex items-center mr-0 "
               >
                 subscribe
               </button>

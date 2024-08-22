@@ -9,14 +9,14 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 /* eslint-disable react/prop-types */
-const AboutCard = ({ title, description, buttonText, image }) => {
+const AboutCard = ({ image, name, occupation }) => {
   return (
     <div className="relative group z-10 w-full bg-white shadow-md transition-all">
       <div className="relative z-10 group-hover:cursor-pointer">
         <div className="relative z-[10] w-full flex justify-center overflow-hidden">
           <img
             src={image}
-            alt={title}
+            alt={name}
             className="block relative -z-[1000] h-[22rem] w-full overflow-hidden"
           />
           <div className="z-[10] absolute top-[0%] left-[0%] py-4 w-[102%] h-full bg-about opacity-0 shadow-lg scale-50 group-hover:scale-100 group-hover:backface-hidden group-hover:opacity-100 transition-all duration-300 will-change-transform">
@@ -75,20 +75,20 @@ const AboutCard = ({ title, description, buttonText, image }) => {
             </div>
             <div className="absolute w-full top-[60%] translate-y-[30px] group-hover:-translate-y-[20px] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center transition-all duration-500 will-change-transform">
               <h2 className="text-tertiary font-bold capitalize text-center opacity-0 group-hover:opacity-100">
-                {title}
+                {name}
               </h2>
-              <p className="text-tertiary text-center opacity-0 group-hover:opacity-100 transition-apacity delay-100">
-                {description}
+              <p className="text-tertiary text-[14px] text-center opacity-0 group-hover:opacity-100 transition-apacity delay-100">
+                {occupation}
               </p>
             </div>
           </div>
           <div className="absolute z-[9] py-4 w-[101%] h-[25%] bottom-[0%] custom-bg group-hover:h-0 group-hover:opacity-0 transition-all duration-300 will-change-transform overflow-hidden">
             <h3 className="capitalize text-primary font-bold text-center">
-              kaleab gemechu
+              {name}
             </h3>
-            <p className="capitalize text-secondary text-center">
+            <p className="capitalize text-secondary text-[14px] text-center">
               {" "}
-              wed developer
+              {occupation}
             </p>
           </div>
         </div>

@@ -14,7 +14,7 @@ const BlogCard = () => {
   console.log(content);
 
   return (
-    <div className="grid phone:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 row-gap-4 px-4">
+    <div className="grid phone:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-y-10 px-4">
       {content.map((item, i) => (
         <div
           key="i"
