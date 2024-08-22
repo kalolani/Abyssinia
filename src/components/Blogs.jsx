@@ -1,6 +1,6 @@
-import BlogCard from "./BlogCard";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import BlogCarousel from "./BlogCarousel";
 
 function Blogs() {
   return (
@@ -33,7 +33,7 @@ function Blogs() {
         viewport={{ once: false, amount: 0.5 }}
         className="relative z-[1] mt-[70px] max-w-[1100px] m-auto gap-8"
       >
-        <BlogCard />
+        <BlogCarousel />
       </motion.div>
     </div>
   );
