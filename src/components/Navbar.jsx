@@ -20,7 +20,7 @@ function Navbar() {
           <li className="list-none">
             <a
               href="#"
-              className="no-underline text-white text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
+              className="no-underline text-white phone:text-[1.1rem] mdphone:text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
             >
               <span className="mr-[2rem]">01</span>about natours
             </a>
@@ -28,7 +28,7 @@ function Navbar() {
           <li className="list-none">
             <a
               href="#"
-              className="no-underline text-white text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
+              className="no-underline text-white phone:text-[1.1rem] mdphone:text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
             >
               <span className="mr-[2rem]">02</span>your benefits
             </a>
@@ -36,7 +36,7 @@ function Navbar() {
           <li className="list-none">
             <a
               href="#"
-              className="no-underline text-white text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
+              className="no-underline text-white phone:text-[1.1rem] mdphone:text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
             >
               <span className="mr-[2rem]">03</span>popular tours
             </a>
@@ -44,7 +44,7 @@ function Navbar() {
           <li className="list-none">
             <a
               href="#"
-              className="no-underline text-white text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
+              className="no-underline text-white phone:text-[1.1rem] mdphone:text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
             >
               <span className="mr-[2rem]">04</span>stories
             </a>
@@ -52,7 +52,7 @@ function Navbar() {
           <li className="list-none">
             <a
               href="#"
-              className="no-underline text-white text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
+              className="no-underline text-white phone:text-[1.1rem] mdphone:text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
             >
               <span className="mr-[2rem]">05</span>book now
             </a>

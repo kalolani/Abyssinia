@@ -10,7 +10,7 @@ import BlogCard from "../components/BlogCard";
 
 function Blog() {
   return (
-    <div>
+    <div className="overflow-hidden">
       {" "}
       <div className="relative bg-custom-linear h-[92vh] w-full">
         <PageNav />

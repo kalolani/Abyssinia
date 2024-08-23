@@ -41,8 +41,8 @@ function Contact() {
         className="max-w-[1000px] m-auto py-[40px] grid phone:grid-cols-1 mtab:grid-cols-2 items-center justify-items-center px-4"
         id="contact"
       >
-        <div className="w-full phone:flex phone:justify-center ptab:flex-none ptab:flex-none">
-          <form onSubmit="" className="w-full w-3/6 phone:w-full">
+        <div className="phone:w-11/12 phone:flex justify-center mtab:w-full">
+          <form onSubmit="" className="w-full">
             <div className="">
               <label
                 htmlFor="name"
@@ -57,7 +57,7 @@ function Contact() {
                 id="name"
                 placeholder="Your Name"
                 required
-                className="inline-block w-3/4 h-[30px] py-[20px] px-[30px] text-[15px] mb-[15px] border focus:outline-btn-bg-main rounded-md"
+                className="inline-block w-11/12 h-[30px] py-[20px] px-[30px] text-[15px] mb-[15px] border focus:outline-btn-bg-main rounded-md"
               />
             </div>
             <div className="email-container">
@@ -72,7 +72,7 @@ function Contact() {
                 id="email"
                 placeholder="Your E-mail Address"
                 required
-                className="inline-block w-3/4 h-[30px] py-[20px] px-[30px] text-[15px] mb-[15px] border focus:outline-btn-bg-main rounded-md"
+                className="inline-block w-11/12 h-[30px] py-[20px] px-[30px] text-[15px] mb-[15px] border focus:outline-btn-bg-main rounded-md"
               />
             </div>
             <div className="textarea-container">
@@ -86,7 +86,7 @@ function Contact() {
                 placeholder="Your Message"
                 id="message"
                 required
-                className="inline-block h-[100px] w-3/4 mb-[25px] border py-[20px] px-[30px] rounded-md focus:outline-btn-bg-main"
+                className="inline-block h-[100px] w-11/12 mb-[25px] border py-[20px] px-[30px] rounded-md focus:outline-btn-bg-main"
               ></textarea>
             </div>
 
@@ -101,7 +101,7 @@ function Contact() {
             </div>
           </form>
         </div>
-        <div className="">
+        <div className="phone:w-0 mtab:w-full">
           <img src="globe.png" />
         </div>
       </div>
