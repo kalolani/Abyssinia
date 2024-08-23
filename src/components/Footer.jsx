@@ -11,7 +11,7 @@ import { fadeIn } from "../variants";
 function Footer() {
   return (
     <>
-      <div className="relative pt-[120px] pb-[270px] bg-[#fbfbfd] overflow-hidden">
+      <div className="relative pt-[120px] pb-[270px] bg-[#fbfbfd] px-6 overflow-hidden">
         <div className="absolute z-[0] bottom-0 w-full h-[266px] bg-footer-image bg-cover bg-no-repeat bg-scroll bg-left phone:bg-center">
           <div className="absolute bottom-0 left-[30%] w-[100px] h-[55px] bg-car-image bg-no-repeat bg-center car"></div>
           <div className="absolute z-[1] bottom-0 left-[38%] w-[100px] h-[90px] bg-bike-image bg-no-repeat bg-center bike"></div>
@@ -22,13 +22,13 @@ function Footer() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.5 }}
-          className="max-w-[1150px] m-auto grid grid-cols-custom-layout phone:grid-cols-1 phone:justify-center tablet:grid-cols-2 btablet:grid-cols-tablet laptop:grid-cols-custom-layout items-start justify-center gap-12 px-4"
+          className="max-w-[1150px] m-auto grid grid-cols-custom-layout phone:grid-cols-1 phone:justify-center ptab:grid-cols-2 tablet:grid-cols-2 btablet:grid-cols-tablet laptop:grid-cols-custom-layout items-start justify-center gap-12 px-4"
         >
-          <div className="flex flex-col gap-6 justify-center items-start phone:items-center tablet:items-start laptop:items-start">
+          <div className="flex flex-col gap-6 justify-center items-start phone:items-start tablet:items-start laptop:items-start">
             <h3 className="text-[25px] capitalize font-bold text-primary">
               newsletter
             </h3>
-            <p className="text-secondary phone:text-center laptop:text-left">
+            <p className="text-secondary phone:text-left laptop:text-left">
               Subscribe to our newsletter for updates.
             </p>
             <input
@@ -40,10 +40,10 @@ function Footer() {
             </button>
           </div>
           <div className="flex flex-col gap-4 justify-center items-start">
-            <h3 className="text-[25px] capitalize font-bold text-primary self-start phone:self-center tablet:self-start laptop:self-start">
+            <h3 className="text-[25px] capitalize font-bold text-primary self-start phone:self-start tablet:self-start laptop:self-start">
               explore
             </h3>
-            <ul className="flex flex-col gap-4 justify-center items-start self-start phone:self-center tablet:self-start laptop:self-start">
+            <ul className="flex flex-col gap-4 justify-center items-start self-start phone:flex-row phone:self-start ptab:flex-col tablet:self-start laptop:self-start">
               <li className="cursor-pointer hover:shadow-md hover:rotate-[5deg] hover:scale-150 transition-all duration-200">
                 <a className="capitalize text-secondary hover:text-btn-bg-main">
                   home
@@ -75,11 +75,11 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4 justify-center items-start phone:items-center tablet:items-start laptop:items-start">
+          <div className="flex flex-col gap-4 justify-center items-start phone:items-start tablet:items-start laptop:items-start">
             <h3 className="text-[25px] capitalize font-bold text-primary">
               contact info
             </h3>
-            <ul className="flex flex-col gap-4 justify-center items-start phone:items-center tablet:items-start laptop:items-start">
+            <ul className="flex flex-col gap-4 justify-center items-start phone:items-start phone:gap-6 tablet:items-start laptop:items-start">
               <li className="flex items-center gap-4">
                 <IoLocationSharp
                   color="#ff845d"
@@ -93,7 +93,7 @@ function Footer() {
                 </p>
               </li>
 
-              <li className="flex items-center gap-4">
+              <li className="flex items-start gap-4">
                 {" "}
                 <FaPhone color="#ff845d" />
                 <p className="text-secondary">0916163516</p>
@@ -110,17 +110,17 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4 justify-center items-start phone:items-center tablet:items-start laptop:items-start">
+          <div className="flex flex-col gap-4 justify-center items-start phone:items-start tablet:items-start laptop:items-start">
             <h3 className="text-[25px] capitalize font-bold text-primary">
               subscription
             </h3>
-            <p className="text-secondary phone:text-center tablet:text-left laptop:text-left">
+            <p className="text-secondary phone:text-left tablet:text-left laptop:text-left">
               Subscribe to our SAS service to get business software at low price
               with free upgrading, technical support, free training, and free
               maintenance.
             </p>
             <div className="flex flex-col tablet:flex laptop:flex-col gap-4">
-              <p className="text-secondary text-[20px] phone:text-center laptop:text-left">
+              <p className="text-secondary text-[20px] phone:text-start laptop:text-left">
                 follow us on:
               </p>
               <ul className="flex gap-6">
