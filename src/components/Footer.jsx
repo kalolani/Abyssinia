@@ -13,7 +13,7 @@ function Footer() {
     <>
       <div className="relative pt-[120px] pb-[270px] bg-[#fbfbfd] px-6 overflow-hidden">
         <div className="absolute z-[0] bottom-0 w-full h-[266px] bg-footer-image bg-cover bg-no-repeat bg-scroll bg-left phone:bg-center">
-          <div className="absolute bottom-0 left-[30%] w-[100px] h-[55px] bg-car-image bg-no-repeat bg-center car"></div>
+          <div className="absolute bottom-0 left-[30%] w-[170px] h-[55px] bg-car-image bg-no-repeat bg-center car"></div>
           <div className="absolute z-[1] bottom-0 left-[38%] w-[100px] h-[90px] bg-bike-image bg-no-repeat bg-center bike"></div>
           <div className="absolute z-[1] bottom-0 left-[28%] w-[150px] h-[210px] phone:h-[210px] phone:left-[0%] laptop:left-[28%] bg-basketball-image bg-no-repeat bg-center"></div>
         </div>

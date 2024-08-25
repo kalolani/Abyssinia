@@ -18,7 +18,7 @@ export default {
 
       backgroundImage: {
         "footer-image": "url('footer-bg.png')",
-        "car-image": "url('car.png')",
+        "car-image": "url('car-1.png')",
         "bike-image": "url('bike.png')",
         "basketball-image": "url('basketball.jpg')",
       },

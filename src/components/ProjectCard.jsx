@@ -4,9 +4,10 @@ import { FaReact } from "react-icons/fa6";
 import { FaLaravel } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
-const ProjectCard = ({ title, description, buttonText, image }) => {
+const ProjectCard = ({ title, description, path, image }) => {
   return (
     <div className="relative group z-10 max-w-sm bg-white shadow-md rounded-lg overflow-hidden transition-all">
       <div className="relative z-10 group-hover:cursor-pointer">
@@ -42,12 +43,15 @@ const ProjectCard = ({ title, description, buttonText, image }) => {
                 </ul>
               </div>
               <div className="flex justify-center">
-                <Button
-                  variant="primary"
-                  // className="opacity-0 group-hover:opacity-100 p-4 transition-opacity delay-200"
-                >
-                  learn more
-                </Button>
+                <Link to={`/${path}`}>
+                  {" "}
+                  <Button
+                    variant="primary"
+                    // className="opacity-0 group-hover:opacity-100 p-4 transition-opacity delay-200"
+                  >
+                    learn more
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

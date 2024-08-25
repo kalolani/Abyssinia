@@ -36,16 +36,19 @@ function Projects() {
           image="mall.jpg"
           title="mall building information management system"
           description="we provide a complete mall building information management system with web application and mobile application"
+          path="building"
         />
         <ProjectCard
           image="school.png"
           title="school information system"
           description="we provide a complete information system to manage all school activities.It has web app mobile app and  desktop app for school manager,for students and for parents"
+          path="school"
         />
         <ProjectCard
           image="epr.png"
           title="EPR system"
           description="A complete EPR system for factories and trading companies"
+          path="epr"
         />
       </motion.div>
     </div>

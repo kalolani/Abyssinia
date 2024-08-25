@@ -69,14 +69,17 @@ function PageNav() {
         </li>
         <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
           <a className="before:inline-block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]">
-            services
+            pages
           </a>
         </li>
         <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
-          <a className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]">
+          <Link
+            to="/project"
+            className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
+          >
             {" "}
-            pages
-          </a>
+            portifolio
+          </Link>
         </li>
         <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
           <Link
@@ -104,9 +107,11 @@ function PageNav() {
         </li>
       </ul>
       <div className={`${isHidden ? "" : "hidden"}`}>
-        <Button variant="primary" size="sm">
-          let's talk!
-        </Button>
+        <Link to="/contact">
+          <Button variant="primary" size="sm">
+            let's talk!
+          </Button>
+        </Link>
       </div>
     </div>
   );
