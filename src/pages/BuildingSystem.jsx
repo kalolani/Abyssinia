@@ -77,38 +77,38 @@ function BuildingSystem() {
           <img src="service.png" className="block" />
         </div>
         <div className="w-3/4 justify-self-end flex flex-col gap-4 my-6">
-          <div className="ml-6">
+          <div className="ml-4">
             <img src="star.png" className="block h-[35px] w-[35px]" />
           </div>
           <div>
-            <h2 className="text-primary text-2xl font-bold ml-6">
+            <h2 className="text-primary text-2xl font-bold ml-4">
               Free Services:
             </h2>
           </div>
           <div className="">
             <ul className="flex flex-col gap-4">
-              <li className="flex items-center justify-items-center gap-[2px]">
+              <li className="flex items-start justify-items-center gap-[2px]">
                 <img src="right.png" className="block h-[25px] w-[50px]" />
                 <p>Android and Web Application Included</p>
               </li>
-              <li className="flex items-center justify-items-center gap-2">
+              <li className="flex items-start justify-items-center gap-2">
                 <img src="right.png" className="block h-[25px] w-[50px]" />
                 <p>Android and Web Application Included</p>
               </li>
-              <li className="flex items-center justify-items-center gap-2">
+              <li className="flex items-start justify-items-center gap-2">
                 <img src="right.png" className="block h-[25px] w-[50px]" />
                 <p>
                   Complete Documentation: User Manual and Technician Document
                 </p>
               </li>
-              <li className="flex items-center justify-items-center gap-2">
+              <li className="flex items-start justify-items-center gap-2">
                 <img src="right.png" className="block h-[25px] w-[50px]" />
                 <p>
                   Free Customization, Training, Support, Deployment,
                   Maintenance, and Server Monitoring
                 </p>
               </li>
-              <li className="flex items-center justify-items-center gap-2">
+              <li className="flex items-start justify-items-center gap-2">
                 <img src="right.png" className="block h-[25px] w-[50px]" />
                 <p>Free Trial Access</p>
               </li>
@@ -118,33 +118,33 @@ function BuildingSystem() {
       </div>
       <div className="max-w-[1000px] m-auto grid grid-cols-2 items-center gap-4">
         <div className="flex flex-col gap-6 mt-4">
-          <div className="ml-6">
+          <div className="ml-4">
             <img src="star.png" className="block h-[35px] w-[35px]" />
           </div>
           <div>
-            <h2 className="text-primary text-3xl font-bold ml-6">
+            <h2 className="text-primary text-3xl font-bold ml-4">
               System Includes:
             </h2>
           </div>
           <div className="">
             <ul className="flex flex-col gap-4">
-              <li className="flex items-center justify-items-center gap-[2px]">
+              <li className="flex items-start justify-items-center gap-[2px]">
                 <img src="right.png" className="block h-[25px] w-[50px]" />
                 <p>Web Application</p>
               </li>
-              <li className="flex items-center justify-items-center gap-2">
+              <li className="flex items-start justify-items-center gap-2">
                 <img src="right.png" className="block h-[25px] w-[50px]" />
                 <p>Desktop Computer App</p>
               </li>
-              <li className="flex items-center justify-items-center gap-2">
+              <li className="flex items-start justify-items-center gap-2">
                 <img src="right.png" className="block h-[25px] w-[50px]" />
                 <p>Finance System</p>
               </li>
-              <li className="flex items-center justify-items-center gap-2">
+              <li className="flex items-start justify-items-center gap-2">
                 <img src="right.png" className="block h-[25px] w-[50px]" />
                 <p>Building Information System</p>
               </li>
-              <li className="flex items-center justify-items-center gap-2">
+              <li className="flex items-start justify-items-center gap-2">
                 <img src="right.png" className="block h-[25px] w-[50px]" />
                 <p>Properties Management System</p>
               </li>
