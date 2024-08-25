@@ -49,7 +49,7 @@ function SchoolSystem() {
           />
         </div>
       </div> */}
-      <div className="max-w-[1000px] m-auto grid grid-cols-2 items-center gap-4 py-20">
+      <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4 py-20">
         <div className="flex flex-col gap-6">
           <div>
             <img src="star.png" className="block h-[50px] w-[50px]" />
@@ -72,7 +72,7 @@ function SchoolSystem() {
           <img src="subscribe.png" className="block w-full h-full" />
         </div>
       </div>
-      <div className="max-w-[1000px] m-auto grid grid-cols-2 items-center gap-6 my-10">
+      <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-6 my-10">
         <div className="items-end mt-0">
           <img src="service.png" className="block" />
         </div>
@@ -127,7 +127,7 @@ function SchoolSystem() {
           </div>
         </div>
       </div>
-      <div className="max-w-[1000px] m-auto grid grid-cols-2 items-center gap-4">
+      <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4">
         <div className="flex flex-col gap-6 mt-4">
           <div className="ml-4">
             <img src="star.png" className="block h-[35px] w-[35px]" />
@@ -181,7 +181,7 @@ function SchoolSystem() {
           <img src="system.png" className="block" />
         </div>
       </div>
-      <div className="max-w-[1000px] m-auto grid grid-cols-2 items-center gap-4 my-40">
+      <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4 my-40">
         <div className="flex flex-col gap-6 mt-16">
           <img src="free.png" className="block" />
         </div>
