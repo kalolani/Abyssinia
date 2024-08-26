@@ -50,7 +50,7 @@ function EprSystem() {
         </div>
       </div> */}
       <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4 py-20">
-        <div className="flex flex-col gap-6">
+        <div className="justify-self-center flex flex-col gap-6">
           <div>
             <img src="star.png" className="block h-[50px] w-[50px]" />
           </div>
@@ -76,15 +76,18 @@ function EprSystem() {
             </ul>
           </div>
         </div>
-        <div>
-          <img src="subscribe.png" className="block w-full h-full" />
+        <div className="flex justify-center">
+          <img
+            src="subscribe.png"
+            className="block w-full h-full phone:w-3/4 phone:w-3/4"
+          />
         </div>
       </div>
       <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-6 my-10">
-        <div className="items-end mt-0">
-          <img src="service.png" className="block" />
+        <div className="flex justify-center">
+          <img src="service.png" className="block phone:w-3/4 phone:h-3/4" />
         </div>
-        <div className="w-3/4 justify-self-end flex flex-col gap-4 my-6">
+        <div className="w-3/4 justify-self-center flex flex-col gap-4 my-6">
           <div className="ml-4">
             <img src="star.png" className="block h-[35px] w-[35px]" />
           </div>
@@ -132,7 +135,7 @@ function EprSystem() {
         </div>
       </div>
       <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4">
-        <div className="flex flex-col gap-6 mt-4">
+        <div className="justify-self-center flex flex-col gap-6 mt-4">
           <div className="ml-4">
             <img src="star.png" className="block h-[35px] w-[35px]" />
           </div>
@@ -170,13 +173,13 @@ function EprSystem() {
             </ul>
           </div>
         </div>
-        <div className="my-6">
-          <img src="system.png" className="block" />
+        <div className="flex justify-center my-6">
+          <img src="system.png" className="block phone:w-3/4 phone:h-3/4" />
         </div>
       </div>
-      <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4 my-40">
-        <div className="flex flex-col gap-6 mt-16">
-          <img src="free.png" className="block" />
+      <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4 my-10">
+        <div className="items-center flex flex-col gap-6 mt-16">
+          <img src="free.png" className="block phone:w-3/4 phone:w-3/4" />
         </div>
         <div className="justify-self-center flex flex-col gap-6">
           <div className="">
