@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 function About() {
   return (
-    <div>
+    <div className="overflow-hidden">
       {" "}
       <div className="relative bg-custom-linear h-[92vh] w-full">
         <PageNav />
@@ -61,7 +61,7 @@ function About() {
           <br />
           turning code into innovation and challenges into achievements.
         </motion.p>
-        <div className="m-auto max-w-[1060px] grid grid-cols-4 gap-8 items-center justify-items-center mt-14">
+        <div className="m-auto max-w-[1060px] phone:grid-cols-1 ptab:grid-cols-2 btablet:grid-cols-3 laptop:grid-cols-4 grid grid-cols-4 gap-8 items-center justify-items-center mt-14 px-4 laptop:px-0">
           <AboutCard
             image="kaleab.jpg"
             name="kaleab gemechu"
