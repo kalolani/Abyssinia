@@ -7,6 +7,7 @@ const StoreContext = createContext();
 
 function StoreProvider({ children }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [showPages, setShowPages] = useState(false);
   const content = [
     {
       // text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
@@ -92,7 +93,9 @@ function StoreProvider({ children }) {
     setIsOpen(!isOpen);
   }
   return (
-    <StoreContext.Provider value={{ isOpen, handleIsOpen, content }}>
+    <StoreContext.Provider
+      value={{ isOpen, handleIsOpen, content, showPages, setShowPages }}
+    >
       {children}
     </StoreContext.Provider>
   );

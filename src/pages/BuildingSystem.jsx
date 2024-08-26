@@ -10,14 +10,18 @@ import BlogCard from "../components/BlogCard";
 import ProjectCard from "../components/ProjectCard";
 import ServiceCard from "../components/ServiceCard";
 import Button from "../components/Button";
+import { useStores } from "../contexts/storeContext";
+import PagesDropdown from "../components/PagesDropdown";
 
 function BuildingSystem() {
+  const { showPages } = useStores();
   return (
     <div className="overflow-hidden">
       {" "}
       <div className="relative bg-custom-linear h-[92vh] w-full">
         <PageNav />
         <Navbar />
+        {showPages && <PagesDropdown />}
         <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="">
             <motion.h1

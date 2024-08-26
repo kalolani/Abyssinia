@@ -70,20 +70,9 @@ function Services() {
           buttonText="Learn More"
         />
       </motion.div>
-      {/* <div className="absolute top-[40%] start-[8%] z-[9] phone:opacity-0 laptop:opacity-100">
-        <img src="sefed.jpg" />
-      </div>
-      <div className="absolute top-[40%] start-[40%] z-[9] phone:opacity-0 laptop:opacity-100">
-        <img src="sefed.jpg" />
-      </div>
-      <div className="absolute top-[40%] end-[8%] z-[9] phone:opacity-0 laptop:opacity-100">
-        <img src="sefed.jpg" />
-      </div> */}
+
       <div className="absolute top-[23%] phone:top-[7%]  phone:-start-[20%] tablet:top-[20%] laptop:top-[23%] -start-[5%] tablet:-start-[8%] laptop:-start-[5%] z-[9]">
         <img src="shape-01.webp" />
-      </div>
-      <div className="absolute top-[25%] phone:top-[8%] laptop:top-[25%] -end-[0%] z-[9] phone:opacity-0 laptop:opacity-100">
-        <img src="triangle_two.5876f8fe.png" />
       </div>
     </div>
   );

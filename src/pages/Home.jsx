@@ -10,6 +10,8 @@ import { AiOutlineSecurityScan } from "react-icons/ai";
 import Testimony from "../components/Testimony";
 import Blogs from "../components/Blogs";
 import Footer from "../components/Footer";
+import { useStores } from "../contexts/storeContext";
+import PagesDropdown from "../components/PagesDropdown";
 
 const faqs = [
   {
@@ -35,10 +37,11 @@ const faqs = [
 ];
 
 function Home() {
+  const { showPages } = useStores();
   return (
-    <div className="overflow-hidden">
+    <div className="relative overflow-hidden">
       <Header />
-      {/* <FlipCard /> */}
+      {showPages && <PagesDropdown />}
       <Services />
       <Projects />
       <FrequentlyAsked data={faqs} />
