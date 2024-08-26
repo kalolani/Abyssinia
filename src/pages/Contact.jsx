@@ -8,9 +8,9 @@ import Map from "../components/Map";
 
 function Contact() {
   return (
-    <div>
+    <div className="overflow-hidden">
       {" "}
-      <div className="relative bg-custom-linear h-[92vh] w-full overflow-hidden">
+      <div className="relative bg-custom-linear h-[92vh] w-full">
         <PageNav />
         <Navbar />
         <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">

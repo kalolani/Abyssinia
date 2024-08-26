@@ -36,7 +36,7 @@ const faqs = [
 
 function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
       {/* <FlipCard /> */}
       <Services />
