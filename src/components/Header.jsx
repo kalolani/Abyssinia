@@ -3,6 +3,9 @@ import PageNav from "./PageNav";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Navbar from "./Navbar";
+import cube from "../assets/images/cube.png";
+import shape5 from "../assets/images/shape-05.webp";
+import shape3 from "../assets/images/shape-03.webp";
 
 function Header() {
   return (
@@ -55,13 +58,13 @@ function Header() {
         </Button>
       </motion.div>
       <div className="absolute top-[70%] phone:top-[85%] mtab:top-[80%] tablet:top-[75%] laptop:top-[70%] end-[-24%] z-[-1]">
-        <img src="shape-03.webp" />
+        <img src={shape3} />
       </div>
       <div className="absolute top-[95%] end-[1%] z-[100] animate-wc-y-anim">
-        <img src="shape-05.webp" />
+        <img src={shape5} />
       </div>
       <div className="absolute bottom-[calc(80%+13px)] start-[25%] cube z-[1] phone:opacity-0 laptop:opacity-100">
-        <img src="cube.png" />
+        <img src={cube} />
       </div>
       <div className="absolute h-[10px] w-[10px] rounded-lg bg-[#00c99c] top-[40%] start-[5%] bubble-one z-[100]"></div>
       <div className="absolute h-[30px] w-[30px] rounded-2xl bg-[#fca249] top-[65%] start-[8%] bubble-two z-[100] phone:opacity-0 tablet:opacity-100"></div>

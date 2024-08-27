@@ -12,6 +12,14 @@ import ServiceCard from "../components/ServiceCard";
 import Button from "../components/Button";
 import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
+//images
+import star from "../assets/images/star.png";
+import subscribe from "../assets/images/subscribe.png";
+import service from "../assets/images/service.png";
+import system from "../assets/images/system.png";
+import right from "../assets/images/right.png";
+import free from "../assets/images/free.png";
+import software from "../assets/images/software.png";
 
 function EprSystem() {
   const { showPages } = useStores();
@@ -45,14 +53,6 @@ function EprSystem() {
           </div>
         </div>
       </div>
-      {/* <div className="relative z-10 py-[2rem] text-center">
-        <div>
-          <img
-            src="dot.png"
-            className="block absolute z-11 top-[35px] left-10 my-16"
-          />
-        </div>
-      </div> */}
       <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4 py-20">
         <motion.div
           variants={fadeIn("right", 0)}
@@ -62,7 +62,7 @@ function EprSystem() {
           className="justify-self-center flex flex-col gap-6"
         >
           <div>
-            <img src="star.png" className="block h-[50px] w-[50px]" />
+            <img src={star} className="block h-[50px] w-[50px]" />
           </div>
           <div>
             <h2 className="text-primary text-3xl font-bold">
@@ -72,15 +72,15 @@ function EprSystem() {
           <div>
             <ul className="flex flex-col gap-4">
               <li className="flex items-start justify-items-center gap-[2px]">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>For One Month: 2500 Birr</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>For Three Months: 7000 Birr</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>For One Year: 13000 Birr</p>
               </li>
             </ul>
@@ -94,7 +94,7 @@ function EprSystem() {
           className="flex justify-center"
         >
           <img
-            src="subscribe.png"
+            src={subscribe}
             className="block w-full h-full phone:w-3/4 phone:w-3/4"
           />
         </motion.div>
@@ -107,7 +107,7 @@ function EprSystem() {
           viewport={{ once: false, amount: 0.2 }}
           className="flex justify-center"
         >
-          <img src="service.png" className="block phone:w-3/4 phone:h-3/4" />
+          <img src={service} className="block phone:w-3/4 phone:h-3/4" />
         </motion.div>
         <motion.div
           variants={fadeIn("left", 0)}
@@ -117,7 +117,7 @@ function EprSystem() {
           className="w-3/4 justify-self-center flex flex-col gap-4 my-6"
         >
           <div className="ml-4">
-            <img src="star.png" className="block h-[35px] w-[35px]" />
+            <img src={star} className="block h-[35px] w-[35px]" />
           </div>
           <div>
             <h2 className="text-primary text-2xl font-bold ml-4">
@@ -127,35 +127,35 @@ function EprSystem() {
           <div className="">
             <ul className="flex flex-col gap-4">
               <li className="flex items-start justify-items-center gap-[2px]">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>
                   Additional Android Application for Sales, Storekeeper, and
                   Managers
                 </p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Compatibility with iPhone, Android, and Computers</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Works Online or Offline</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>
                   Complete Documentation: User Manual and Technician Document
                 </p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>
                   Free Customization, Training, Support, Deployment,
                   Maintenance, and Server Monitoring
                 </p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Free Trial Access</p>
               </li>
             </ul>
@@ -171,7 +171,7 @@ function EprSystem() {
           className="justify-self-center flex flex-col gap-6 mt-4"
         >
           <div className="ml-4">
-            <img src="star.png" className="block h-[35px] w-[35px]" />
+            <img src={star} className="block h-[35px] w-[35px]" />
           </div>
           <div>
             <h2 className="text-primary text-3xl font-bold ml-4">
@@ -181,27 +181,27 @@ function EprSystem() {
           <div className="">
             <ul className="flex flex-col gap-4">
               <li className="flex items-start justify-items-center gap-[2px]">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Finance and Accounting System</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Inventory and Warehouse Management System</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Human Resource Management System</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Customer Relationship Management (CRM) System</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Point of Sale (POS) System</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Supply Chain Management System</p>
               </li>
             </ul>
@@ -214,7 +214,7 @@ function EprSystem() {
           viewport={{ once: false, amount: 0.2 }}
           className="flex justify-center my-6"
         >
-          <img src="system.png" className="block phone:w-3/4 phone:h-3/4" />
+          <img src={system} className="block phone:w-3/4 phone:h-3/4" />
         </motion.div>
       </div>
       <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4 my-10">
@@ -225,7 +225,7 @@ function EprSystem() {
           viewport={{ once: false, amount: 0.2 }}
           className="items-center flex flex-col gap-6 mt-16"
         >
-          <img src="free.png" className="block phone:w-3/4 phone:w-3/4" />
+          <img src={free} className="block phone:w-3/4 phone:w-3/4" />
         </motion.div>
         <motion.div
           variants={fadeIn("left", 0)}
@@ -236,7 +236,7 @@ function EprSystem() {
         >
           <div className="">
             <ServiceCard
-              image="software.png"
+              image={software}
               title="free space"
               description="BG building"
               buttonText="Learn More"

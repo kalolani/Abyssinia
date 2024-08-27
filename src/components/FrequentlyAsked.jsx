@@ -4,8 +4,8 @@ import { FiPlus } from "react-icons/fi";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { motion } from "framer-motion";
-
 import { fadeIn } from "../variants";
+import her from "../assets/images/her.png";
 function FrequentlyAsked({ data }) {
   const [curOpen, setCurOpen] = useState(data[0].image); // Initialize with the num of the first item
 
@@ -47,7 +47,7 @@ function FrequentlyAsked({ data }) {
           className="grid w-full tablet:w-1/2 btablet:w-full tablet:justify-self-center"
         >
           <img
-            src="her.png"
+            src={her}
             className="w-full h-full laptop:w-full place-items-start -mt-[30px]"
           />
         </motion.div>

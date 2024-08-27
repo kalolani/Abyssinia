@@ -3,6 +3,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import { HiMiniArrowLongLeft, HiMiniArrowLongRight } from "react-icons/hi2";
+import yoro from "../assets/images/yoro.png";
+import zirkzee from "../assets/images/zirkzee.png";
+import ronaldo from "../assets/images/ronaldo.png";
+import kobe from "../assets/images/kobe.png";
+import messi from "../assets/images/messi.png";
+import sancho from "../assets/images/sancho.png";
 
 const TestimonialCarousel = () => {
   const settings = {
@@ -35,42 +41,42 @@ const TestimonialCarousel = () => {
     {
       qoute: <FaQuoteLeft size={50} color="rgb(217 119 6)" />,
       text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-      img: "yoro.png",
+      img: yoro,
       name: "kaleab gemechu",
       title: "front-end developer",
     },
     {
       qoute: <FaQuoteLeft size={50} color="rgb(217 119 6)" />,
       text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-      img: "zirkzee.png",
+      img: zirkzee,
       name: "kaleab gemechu",
       title: "front-end developer",
     },
     {
       qoute: <FaQuoteLeft size={50} color="rgb(217 119 6)" />,
       text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-      img: "ronaldo.png",
+      img: ronaldo,
       name: "kaleab gemechu",
       title: "front-end developer",
     },
     {
       qoute: <FaQuoteLeft size={50} color="rgb(217 119 6)" />,
       text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-      img: "sancho.png",
+      img: sancho,
       name: "kaleab gemechu",
       title: "front-end developer",
     },
     {
       qoute: <FaQuoteLeft size={50} color="rgb(217 119 6)" />,
       text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-      img: "kobe.png",
+      img: kobe,
       name: "kaleab gemechu",
       title: "front-end developer",
     },
     {
       qoute: <FaQuoteLeft size={50} color="rgb(217 119 6)" />,
       text: "Amazing support! Totally all over my issues and we were changing it completely from being a place directory! Loving the theme on top of your task lists stay in touch with what's happening.",
-      img: "messi.png",
+      img: messi,
       name: "kaleab gemechu",
       title: "front-end developer",
     },

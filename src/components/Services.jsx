@@ -1,6 +1,13 @@
 import ServiceCard from "./ServiceCard";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import shape1 from "../assets/images/shape-01.webp";
+import mobile_app from "../assets/images/mobile-app.png";
+import consult from "../assets/images/consulting.png";
+import testing from "../assets/images/testing.png";
+import sass from "../assets/images/sass.png";
+import pc1 from "../assets/images/pc-1.png";
+import pc from "../assets/images/pc.png";
 
 function Services() {
   return (
@@ -34,37 +41,37 @@ function Services() {
         className="relative z-[11] max-w-[1150px] m-auto grid grid-cols-3 phone:grid-cols-1 phone:justify-items-center mtab:grid-cols-2 laptop:grid-cols-3 gap-8 pt-10 phone:pt-0 mtab:pt-2 tablet:pt-4 btablet:pt-6 laptop:pt-10 z-[10] px-4"
       >
         <ServiceCard
-          image="pc.png"
+          image={pc}
           title="website development"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
         <ServiceCard
-          image="mobile-app.png"
+          image={mobile_app}
           title="mobile app development"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
         <ServiceCard
-          image="consulting.png"
+          image={consult}
           title="software as service"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
         <ServiceCard
-          image="sass.png"
+          image={sass}
           title="General technology consulting"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
         <ServiceCard
-          image="pc-1.png"
+          image={pc1}
           title="software development training"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
         />
         <ServiceCard
-          image="testing.png"
+          image={testing}
           title="software security tasting"
           description="we develop Web apps, and websites for companies and for individuals with SEO optimization, with Attractive UI/UX design, Responsive design."
           buttonText="Learn More"
@@ -72,7 +79,7 @@ function Services() {
       </motion.div>
 
       <div className="absolute top-[23%] phone:top-[7%]  phone:-start-[20%] tablet:top-[20%] laptop:top-[23%] -start-[5%] tablet:-start-[8%] laptop:-start-[5%] z-[9]">
-        <img src="shape-01.webp" />
+        <img src={shape1} />
       </div>
     </div>
   );

@@ -1,6 +1,12 @@
 import TestimonialCarousel from "./TestimonyCarousel";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import yoro from "../assets/images/yoro.png";
+import zirkzee from "../assets/images/zirkzee.png";
+import ronaldo from "../assets/images/ronaldo.png";
+import kobe from "../assets/images/kobe.png";
+import messi from "../assets/images/messi.png";
+import sancho from "../assets/images/sancho.png";
 
 function Testimony() {
   return (
@@ -28,29 +34,7 @@ function Testimony() {
           Check What’s Our Client Say
           <br className="visible phone:hidden" /> About Us
         </motion.h1>
-        {/* <div className="max-w-[700px] m-auto flex flex-col gap-4 items-center">
-          <div>
-            {" "}
-            <FaQuoteLeft size={50} color="rgb(217 119 6)" />
-          </div>
-          <div>
-            <p className="text-primary text-center capitalize">
-              Amazing support! Totally all over my issues and we were changing
-              it completely from being a place directory! Loving the theme on
-              top of your task lists stay in touch with what&apos;s happening.
-            </p>
-          </div>
-          <div>
-            <img src="kal.png" className="block w-[50px] h-[50px]" />
-          </div>
-          <div>
-            <p className="capitalize text-primary">kaleab gemechu</p>
-          </div>
-          <div className="flex items-center gap-4">
-            <HiMiniArrowLongLeft className="cursor-pointer" />
-            <HiMiniArrowLongRight className="cursor-pointer" />
-          </div>
-        </div> */}
+
         <div className="relative">
           {" "}
           <motion.div
@@ -71,7 +55,7 @@ function Testimony() {
           className="absolute left-[15%] tablet:left-[5%] laptop:left-[15%] top-[35%] tablet:top-[30%] laptop:top-[35%] opacity-100 phone:opacity-0"
         >
           <img
-            src="yoro.png"
+            src={yoro}
             className="block w-[82px] h-[82px] opacity-100 phone:opacity-0 laptop:opacity-100"
           />
         </motion.div>
@@ -83,7 +67,7 @@ function Testimony() {
           className="absolute left-[8%]  tablet:left-[5%] laptop:left-[8%] top-[65%] tablet:top-[60%] laptop:top-[65%] phone:opacity-0 laptop:opacity-100"
         >
           <img
-            src="zirkzee.png"
+            src={zirkzee}
             className="block w-[60px] h-[60px] opacity-100 phone:opacity-0 laptop:opacity-100"
           />
         </motion.div>
@@ -95,7 +79,7 @@ function Testimony() {
           className="absolute left-[20%] tablet:left-[15%] laptop:left-[20%] top-[80%] tablet:top-[75%] laptop:top-[80%] phone:opacity-0 laptop:opacity-100"
         >
           <img
-            src="ronaldo.png"
+            src={ronaldo}
             className="block w-[82px] h-[82px]opacity-100 phone:opacity-0 laptop:opacity-100"
           />
         </motion.div>
@@ -107,7 +91,7 @@ function Testimony() {
           className="absolute right-[15%] tablet:right-[5%] laptop:right-[15%] top-[35%] tablet:top-[30%] laptop:top-[35%] phone:opacity-0 laptop:opacity-100"
         >
           <img
-            src="messi.png"
+            src={messi}
             className="block w-[82px] h-[82px] opacity-100 phone:opacity-0 laptop:opacity-100"
           />
         </motion.div>
@@ -119,7 +103,7 @@ function Testimony() {
           className="absolute right-[8%] tablet:right-[5%] laptop:right-[8%] top-[65%] tablet:top-[60%] laptop:top-[65%] phone:opacity-0 laptop:opacity-100"
         >
           <img
-            src="kobe.png"
+            src={kobe}
             className="block w-[60px] h-[60px] opacity-100 phone:opacity-0 laptop:opacity-100"
           />
         </motion.div>
@@ -131,7 +115,7 @@ function Testimony() {
           className="absolute right-[20%] tablet:right-[15%] laptop:right-[20%] top-[80%] top-[75%] laptop:top-[80%] phone:opacity-0 laptop:opacity-100"
         >
           <img
-            src="sancho.png"
+            src={sancho}
             className="block w-[82px] h-[82px] opacity-100 phone:opacity-0 laptop:opacity-100"
           />
         </motion.div>

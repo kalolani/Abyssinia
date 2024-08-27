@@ -17,10 +17,10 @@ export default {
       },
 
       backgroundImage: {
-        "footer-image": "url('footer-bg.png')",
-        "car-image": "url('car-1.png')",
-        "bike-image": "url('bike.png')",
-        "basketball-image": "url('basketball.jpg')",
+        "footer-image": "url('./assets/images/footer-bg.png')",
+        "car-image": "url('./assets/images/car-1.png')",
+        "bike-image": "url('./assets/images/bike.png')",
+        "basketball-image": "url('./assets/images/basketball.jpg')",
       },
       fontFamily: {
         colasta: ["colasta", "sans-serif"],

@@ -12,7 +12,13 @@ import ServiceCard from "../components/ServiceCard";
 import Button from "../components/Button";
 import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
-
+import star from "../assets/images/star.png";
+import subscribe from "../assets/images/subscribe.png";
+import service from "../assets/images/service.png";
+import system from "../assets/images/system.png";
+import right from "../assets/images/right.png";
+import free from "../assets/images/free.png";
+import software from "../assets/images/software.png";
 function BuildingSystem() {
   const { showPages } = useStores();
   return (
@@ -62,7 +68,7 @@ function BuildingSystem() {
           className="flex flex-col justify-self-center gap-6 px-4"
         >
           <div>
-            <img src="star.png" className="block h-[50px] w-[50px]" />
+            <img src={star} className="block h-[50px] w-[50px]" />
           </div>
           <div>
             <h2 className="text-primary text-3xl font-bold">
@@ -86,7 +92,7 @@ function BuildingSystem() {
           className="flex justify-center"
         >
           <img
-            src="subscribe.png"
+            src={subscribe}
             className="block w-full h-full phone:w-3/4 phone:w-3/4"
           />
         </motion.div>
@@ -99,7 +105,7 @@ function BuildingSystem() {
           viewport={{ once: false, amount: 0.2 }}
           className="flex justify-center"
         >
-          <img src="service.png" className="block phone:w-3/4 phone:h-3/4" />
+          <img src={service} className="block phone:w-3/4 phone:h-3/4" />
         </motion.div>
         <motion.div
           variants={fadeIn("left", 0)}
@@ -109,7 +115,7 @@ function BuildingSystem() {
           className="w-3/4 justify-self-end phone:justify-self-center flex flex-col gap-4 my-6"
         >
           <div className="ml-4">
-            <img src="star.png" className="block h-[35px] w-[35px]" />
+            <img src={star} className="block h-[35px] w-[35px]" />
           </div>
           <div>
             <h2 className="text-primary text-2xl font-bold ml-4">
@@ -119,28 +125,28 @@ function BuildingSystem() {
           <div className="">
             <ul className="flex flex-col gap-4">
               <li className="flex items-start justify-items-center gap-[2px]">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Android and Web Application Included</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Android and Web Application Included</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>
                   Complete Documentation: User Manual and Technician Document
                 </p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>
                   Free Customization, Training, Support, Deployment,
                   Maintenance, and Server Monitoring
                 </p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Free Trial Access</p>
               </li>
             </ul>
@@ -156,7 +162,7 @@ function BuildingSystem() {
           className="justify-self-center flex flex-col gap-6 mt-4"
         >
           <div className="ml-4">
-            <img src="star.png" className="block h-[35px] w-[35px]" />
+            <img src={star} className="block h-[35px] w-[35px]" />
           </div>
           <div>
             <h2 className="text-primary text-3xl font-bold ml-4">
@@ -166,23 +172,23 @@ function BuildingSystem() {
           <div className="">
             <ul className="flex flex-col gap-4">
               <li className="flex items-start justify-items-center gap-[2px]">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Web Application</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Desktop Computer App</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Finance System</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Building Information System</p>
               </li>
               <li className="flex items-start justify-items-center gap-2">
-                <img src="right.png" className="block h-[25px] w-[50px]" />
+                <img src={right} className="block h-[25px] w-[50px]" />
                 <p>Properties Management System</p>
               </li>
             </ul>
@@ -195,7 +201,7 @@ function BuildingSystem() {
           viewport={{ once: false, amount: 0.2 }}
           className="flex justify-center my-6"
         >
-          <img src="system.png" className="block phone:w-3/4 phone:h-3/4" />
+          <img src={system} className="block phone:w-3/4 phone:h-3/4" />
         </motion.div>
       </div>
       <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4 my-20">
@@ -206,7 +212,7 @@ function BuildingSystem() {
           viewport={{ once: false, amount: 0.2 }}
           className="items-center text-center flex flex-col gap-6 mt-4"
         >
-          <img src="free.png" className="block phone:w-3/4 phone:h-3/4" />
+          <img src={free} className="block phone:w-3/4 phone:h-3/4" />
         </motion.div>
         <motion.div
           variants={fadeIn("left", 0)}
@@ -217,7 +223,7 @@ function BuildingSystem() {
         >
           <div className="">
             <ServiceCard
-              image="software.png"
+              image={software}
               title="free space"
               description="BG building"
               buttonText="Learn More"
