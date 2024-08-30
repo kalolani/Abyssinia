@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Map from "../components/Map";
 import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
+import globe from "../assets/images/globe.png";
 
 function Contact() {
   const { showPages } = useStores();
@@ -106,7 +107,7 @@ function Contact() {
           </form>
         </div>
         <div className="phone:w-0 mtab:w-full">
-          <img src="globe.png" />
+          <img src={globe} />
         </div>
       </div>
       <div className="h-[70vh] w-[92%] m-auto mb-[40px]">

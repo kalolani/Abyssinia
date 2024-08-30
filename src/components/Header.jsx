@@ -63,7 +63,7 @@ function Header() {
       <div className="absolute top-[95%] end-[1%] z-[100] animate-wc-y-anim">
         <img src={shape5} />
       </div>
-      <div className="absolute bottom-[calc(80%+13px)] start-[25%] cube z-[1] phone:opacity-0 laptop:opacity-100">
+      <div className="absolute bottom-[calc(80%+13px)] start-[25%] cube z-[1] phone:opacity-0 laptop:opacity-100 bigdesktop:opacity-0">
         <img src={cube} />
       </div>
       <div className="absolute h-[10px] w-[10px] rounded-lg bg-[#00c99c] top-[40%] start-[5%] bubble-one z-[100]"></div>

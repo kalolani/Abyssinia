@@ -8,9 +8,12 @@ import AboutCard from "../components/AboutCard";
 import Footer from "../components/Footer";
 import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
+import kaleab from "../assets/images/kaleab.jpg";
+import ReduxCarousel from "../components/ReduxCarousel";
+import Carousel from "../components/Carousel";
 
 function About() {
-  const { showPages } = useStores();
+  const { showPages, content } = useStores();
   return (
     <div className="overflow-hidden">
       {" "}
@@ -67,46 +70,47 @@ function About() {
         </motion.p>
         <div className="m-auto max-w-[1060px] phone:grid-cols-1 ptab:grid-cols-2 btablet:grid-cols-3 laptop:grid-cols-4 grid grid-cols-4 gap-8 items-center justify-items-center mt-14 px-4 laptop:px-0">
           <AboutCard
-            image="kaleab.jpg"
+            image={kaleab}
             name="kaleab gemechu"
             occupation="frontend developer"
           />
           <AboutCard
-            image="kaleab.jpg"
+            image={kaleab}
             name="kaleab gemechu"
             occupation="frontend developer"
           />
           <AboutCard
-            image="kaleab.jpg"
+            image={kaleab}
             name="kaleab gemechu"
             occupation="frontend developer"
           />
           <AboutCard
-            image="kaleab.jpg"
+            image={kaleab}
             name="kaleab gemechu"
             occupation="frontend developer"
           />
           <AboutCard
-            image="kaleab.jpg"
+            image={kaleab}
             name="kaleab gemechu"
             occupation="frontend developer"
           />
           <AboutCard
-            image="kaleab.jpg"
+            image={kaleab}
             name="kaleab gemechu"
             occupation="frontend developer"
           />
           <AboutCard
-            image="kaleab.jpg"
+            image={kaleab}
             name="kaleab gemechu"
             occupation="frontend developer"
           />
           <AboutCard
-            image="kaleab.jpg"
+            image={kaleab}
             name="kaleab gemechu"
             occupation="frontend developer"
           />
         </div>
+        <Carousel content={content} />
       </div>
       <Footer />
     </div>

@@ -103,7 +103,7 @@ export default {
       desktop: "1200px",
       // => @media (min-width: 1280px) { ... }
 
-      bigdesktop: "1536px",
+      bigdesktop: "1400px",
     },
   },
   plugins: [],

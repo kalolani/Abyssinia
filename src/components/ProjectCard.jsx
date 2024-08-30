@@ -20,10 +20,10 @@ const ProjectCard = ({ title, description, path, image }) => {
           <div className="absolute top-[5%] left-[5%] py-4 w-[90%] bg-white opacity-0 shadow-lg rounded-t-lg rounded-b-lg scale-50 group-hover:scale-100 group-hover:backface-hidden group-hover:opacity-100 transition-all duration-300 will-change-transform">
             {" "}
             <div className="flex flex-col items-center gap-4">
-              <h2 className="text-primary font-bold capitalize text-center opacity-0 group-hover:opacity-100 p-4">
+              <h2 className="text-primary font-bold capitalize text-center opacity-0 group-hover:opacity-100 p-4 pb-0">
                 {title}
               </h2>
-              <p className="text-secondary text-center opacity-0 group-hover:opacity-100 p-4 transition-apacity delay-100">
+              <p className="text-secondary text-center opacity-0 group-hover:opacity-100 p-4 pb-0 transition-apacity delay-100">
                 {description}
               </p>
               <div>

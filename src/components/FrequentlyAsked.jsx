@@ -6,8 +6,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import her from "../assets/images/her.png";
+import Accordion from "./Accordion";
 function FrequentlyAsked({ data }) {
-  const [curOpen, setCurOpen] = useState(data[0].image); // Initialize with the num of the first item
+  // const [curOpen, setCurOpen] = useState(data[0].image); // Initialize with the num of the first item
 
   return (
     <div className="py-[56px]">
@@ -28,15 +29,15 @@ function FrequentlyAsked({ data }) {
           className="w-[500px] phone:w-[350px] laptop:w-[500px] flex flex-col gap-[24px] phone:justify-self-center"
         >
           {data.map((item) => (
-            <AccordionItem
+            <Accordion
               key={item.image}
               num={item.image}
               title={item.title}
-              curOpen={curOpen}
-              setCurOpen={setCurOpen}
+              // curOpen={curOpen}
+              // setCurOpen={setCurOpen}
             >
               {item.text}
-            </AccordionItem>
+            </Accordion>
           ))}
         </motion.div>
         <motion.div
@@ -57,63 +58,3 @@ function FrequentlyAsked({ data }) {
 }
 
 export default FrequentlyAsked;
-
-function AccordionItem({ num, title, curOpen, setCurOpen, children }) {
-  function toggleHandler() {
-    setCurOpen(isOpen ? null : num);
-  }
-  const isOpen = num === curOpen;
-  let iconColor;
-  if (isOpen) {
-    iconColor = "rgb(241 245 249)";
-  } else {
-    iconColor = "rgb(120 53 15)";
-  }
-
-  return (
-    <div
-      className={`w-[450px] phone:w-[320px] mdphone:w-[340px] mtab:w-[360px] tablet:w-[380px] btablet:w-[400px] laptop:w-[450px] relative shadow-md py-[14px] px-[24px] cursor-pointer border-[1px] grid grid-cols-[auto_1fr_auto] items-center rounded-t-md gap-[24px] ${
-        isOpen ? "open" : ""
-      }`}
-      onClick={toggleHandler}
-    >
-      <div
-        className={`relative z-[1] inline-block px-[3px] py-[3px] bg-amber-100 rounded-sm`}
-      >
-        {num}
-      </div>
-      <p
-        className={`relative z-[1] title text-primary ${
-          isOpen ? "text-tertiary" : ""
-        }`}
-      >
-        {title}
-      </p>
-      <p className={`relative z-[1]`}>
-        {isOpen ? (
-          <FaTimes size={17} color={iconColor} />
-        ) : (
-          <FiPlus size={17} color={iconColor} />
-        )}
-      </p>
-      <motion.div
-        className="w-full col-span-3 px-2 overflow-hidden"
-        initial={{ height: 0, opacity: 0 }}
-        animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
-        transition={{
-          height: { duration: 0.5, ease: "easeInOut" },
-          opacity: { duration: 0.3, ease: "easeInOut" },
-        }}
-        style={{ display: isOpen ? "block" : "none" }} // Conditionally render the content
-      >
-        {children}
-      </motion.div>
-
-      <div
-        className={`absolute top-0 left-0 w-full bg-orange-950 z-0 ${
-          isOpen ? "h-[60px]" : "h-0"
-        }`}
-      ></div>
-    </div>
-  );
-}

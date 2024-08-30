@@ -90,6 +90,7 @@ function StoreProvider({ children }) {
       title: "Special Discount on School Management System Subscriptions",
     },
   ];
+
   console.log(isOpen);
   function handleIsOpen() {
     setIsOpen(!isOpen);

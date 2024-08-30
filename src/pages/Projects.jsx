@@ -10,6 +10,10 @@ import BlogCard from "../components/BlogCard";
 import ProjectCard from "../components/ProjectCard";
 import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
+import mall from "../assets/images/mall.jpg";
+import school from "../assets/images/school.png";
+import epr from "../assets/images/epr.png";
+import shape6 from "../assets/images/shape-06.webp";
 
 function Projects() {
   const { showPages } = useStores();
@@ -75,37 +79,37 @@ function Projects() {
           className="relative z-[1] mt-[70px] phone:mt-[10px] mdphone:mt-[15px] ptab:mt-[20px] mtab:mt-[35px] tablet:mt-[50px] btablet:mt-[60px] laptop:mt-[70px] grid grid-cols-3 phone:grid-cols-1 phone:justify-items-center mtab:grid-cols-2 mtab:justify-items-stretch laptop:grid-cols-3 max-w-[1150px] m-auto gap-8 px-4"
         >
           <ProjectCard
-            image="mall.jpg"
+            image={mall}
             title="mall building information management system"
             description="we provide a complete mall building information management system with web application and mobile application"
             path="building"
           />
           <ProjectCard
-            image="school.png"
+            image={school}
             title="school information system"
             description="we provide a complete information system to manage all school activities.It has web app mobile app and  desktop app for school manager,for students and for parents"
             path="school"
           />
           <ProjectCard
-            image="epr.png"
+            image={epr}
             title="EPR system"
             description="A complete EPR system for factories and trading companies"
             path="epr"
           />
           <ProjectCard
-            image="mall.jpg"
+            image={mall}
             title="mall building information management system"
             description="we provide a complete mall building information management system with web application and mobile application"
             path="building"
           />
           <ProjectCard
-            image="school.png"
+            image={school}
             title="school information system"
             description="we provide a complete information system to manage all school activities.It has web app mobile app and  desktop app for school manager,for students and for parents"
             path="school"
           />
           <ProjectCard
-            image="epr.png"
+            image={epr}
             title="EPR system"
             description="A complete EPR system for factories and trading companies"
             path="epr"

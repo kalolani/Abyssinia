@@ -26,7 +26,7 @@ const BlogCard = () => {
               className="w-full h-full scale-100 hover:cursor-pointer hover:scale-105"
             />
           </div>
-          <div className="flex items-center justify-center gap-2 border-b-[1px] mx-6">
+          <div className="flex items-center justify-center gap-2 border-b-[1px]  mx-6">
             {item.calanderIcon}
             <p className="text-secondary text-center p-4 transition-apacity delay-100 hover:cursor-pointer hover:text-btn-bg-main transition-all duration-[300ms]">
               {item.date}

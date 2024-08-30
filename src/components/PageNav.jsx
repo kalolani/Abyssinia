@@ -64,7 +64,7 @@ function PageNav() {
             isHidden ? "" : "hidden"
           }`}
         >
-          <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-all duration-200">
+          <li className="font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-all duration-200">
             <Link
               to="/"
               className="before:inline-block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
@@ -75,13 +75,13 @@ function PageNav() {
           <li
             onMouseEnter={() => setShowPages(true)}
             onMouseLeave={() => setShowPages(false)}
-            className={`group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200`}
+            className={`font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200`}
           >
             <a className="before:inline-block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]">
               pages
             </a>
           </li>
-          <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
+          <li className="font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
             <Link
               to="/project"
               className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
@@ -90,7 +90,7 @@ function PageNav() {
               portifolio
             </Link>
           </li>
-          <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
+          <li className="font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
             <Link
               to="/about"
               className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
@@ -98,7 +98,7 @@ function PageNav() {
               about
             </Link>
           </li>
-          <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
+          <li className="font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
             <Link
               to="/blog"
               className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
@@ -106,7 +106,7 @@ function PageNav() {
               blog
             </Link>
           </li>
-          <li className="group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
+          <li className="font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
             <Link
               to="/contact"
               className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
