@@ -30,6 +30,7 @@ function FrequentlyAsked({ data }) {
         >
           {data.map((item) => (
             <Accordion
+              id={item.id}
               key={item.image}
               num={item.image}
               title={item.title}

@@ -17,21 +17,25 @@ import Carousel from "../components/Carousel";
 
 const faqs = [
   {
+    id: 1,
     image: <AiOutlineDollarCircle size={30} color=" rgb(69 26 3)" />,
     title: "How is your pricing?",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, quaerat temporibus quas dolore provident nisi ut aliquid ratione beatae sequi aspernatur veniam repellendus.",
   },
   {
+    id: 2,
     image: <HiOutlineLocationMarker size={30} color=" rgb(69 26 3)" />,
     title: "Where we got your address?",
     text: "Pariatur recusandae dignissimos fuga voluptas unde optio nesciunt commodi beatae, explicabo natus.",
   },
   {
+    id: 3,
     image: <AiOutlineSecurityScan size={30} color=" rgb(69 26 3)" />,
     title: "Do you have warenty?",
     text: "Excepturi velit laborum, perspiciatis nemo perferendis reiciendis aliquam possimus dolor sed! Dolore laborum ducimus veritatis facere molestias!",
   },
   {
+    id: 4,
     image: <MdSecurity size={25} color=" rgb(69 26 3)" />,
     title: "What about security of your project?",
     text: "Excepturi velit laborum, perspiciatis nemo perferendis reiciendis aliquam possimus dolor sed! Dolore laborum ducimus veritatis facere molestias!",

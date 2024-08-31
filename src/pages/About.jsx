@@ -10,7 +10,6 @@ import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
 import kaleab from "../assets/images/kaleab.jpg";
 import ReduxCarousel from "../components/ReduxCarousel";
-import Carousel from "../components/Carousel";
 
 function About() {
   const { showPages, content } = useStores();
@@ -110,7 +109,6 @@ function About() {
             occupation="frontend developer"
           />
         </div>
-        <Carousel content={content} />
       </div>
       <Footer />
     </div>

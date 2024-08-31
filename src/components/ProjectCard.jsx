@@ -1,13 +1,18 @@
 /* eslint-disable no-unused-vars */
 import Button from "./Button";
-import { FaReact } from "react-icons/fa6";
-import { FaLaravel } from "react-icons/fa6";
-import { SiTailwindcss } from "react-icons/si";
-import { SiPostgresql } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
-const ProjectCard = ({ title, description, path, image }) => {
+const ProjectCard = ({
+  title,
+  description,
+  path,
+  image,
+  icon_1,
+  icon_2,
+  icon_3,
+  icon_4,
+}) => {
   return (
     <div className="relative group z-10 max-w-sm bg-white shadow-md rounded-lg overflow-hidden transition-all">
       <div className="relative z-10 group-hover:cursor-pointer">
@@ -28,18 +33,10 @@ const ProjectCard = ({ title, description, path, image }) => {
               </p>
               <div>
                 <ul className="flex justify-center items-center gap-8">
-                  <li>
-                    <FaReact size={30} color="rgb(6 182 212)" />
-                  </li>
-                  <li>
-                    <FaLaravel size={30} color="rgb(220 38 38)" />
-                  </li>
-                  <li>
-                    <SiTailwindcss size={30} color="rgb(14 165 233)" />
-                  </li>
-                  <li>
-                    <SiPostgresql size={30} />
-                  </li>
+                  <li>{icon_1}</li>
+                  <li>{icon_2}</li>
+                  <li>{icon_3}</li>
+                  <li>{icon_4}</li>
                 </ul>
               </div>
               <div className="flex justify-center">

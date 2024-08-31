@@ -4,8 +4,8 @@
 import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { nextSlide, prevSlide, setSlide } from "../Redux/carauselSlice";
-import { FaArrowCircleLeft } from "react-icons/fa";
-import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import Button from "./Button";
 
 const Carousel = ({ content = [] }) => {
   const dispatch = useDispatch();
@@ -27,11 +27,9 @@ const Carousel = ({ content = [] }) => {
   // Handle infinite scrolling effect
   useEffect(() => {
     if (currentSlide < 1) {
-      // Move instantly to the duplicate of the last three slides
       slideRef.current.style.transition = "none";
       dispatch(setSlide(totalSlides));
     } else if (currentSlide > totalSlides) {
-      // Move instantly to the duplicate of the first three slides
       slideRef.current.style.transition = "none";
       dispatch(setSlide(1));
     } else {
@@ -39,26 +37,38 @@ const Carousel = ({ content = [] }) => {
     }
   }, [currentSlide, dispatch, totalSlides]);
 
+  // Determine the translateX value based on screen size and current slide
+  const calculateTranslateX = () => {
+    if (window.innerWidth <= 640) {
+      // Phone size
+      return `-${(currentSlide - 1) * 102}%`;
+    } else if (window.innerWidth >= 1024) {
+      // Laptop size
+      return `-${(currentSlide - 1) * (102 / 3)}%`;
+    } else {
+      // Tablet or default size
+      return `-${(currentSlide - 1) * (102 / 2)}%`;
+    }
+  };
+
   return (
-    <div className="carousel-container overflow-hidden">
-      {" "}
+    <div className="carousel-container overflow-hidden px-4">
       {/* Wrap the carousel component */}
       <div className="carousel relative w-full max-w-6xl mx-auto overflow-hidden">
-        {" "}
-        {/* Use max-width and margin auto */}
         {/* Previous Button */}
         <button
           onClick={() => dispatch(prevSlide())}
-          className="absolute left-[2px] z-10 p-2 bg-gray-200 rounded-full hover:bg-gray-300 top-[40%] transform -translate-y-1/2 shadow-sm shadow-primary"
+          className="absolute left-2 z-10 p-2 bg-gray-200 rounded-full hover:bg-gray-300 top-1/3 transform -translate-y-1/2 shadow-sm shadow-primary"
         >
           <FaArrowCircleLeft />
         </button>
+
         {/* Slides */}
         <div
           ref={slideRef}
-          className="slides flex gap-2"
+          className="slides flex gap-2 transition-transform duration-500 ease-in-out translate-x-${-(currentSlide - 1) * 100} w-full"
           style={{
-            transform: `translateX(-${(currentSlide - 1) * (100 / 3)}%)`,
+            transform: `translateX(${calculateTranslateX()})`,
             width: "100%",
           }}
         >
@@ -66,83 +76,41 @@ const Carousel = ({ content = [] }) => {
           {content.slice(-3).map((item, index) => (
             <div
               key={`duplicate-last-${index}`}
-              className="w-1/3 flex-shrink-0 overflow-hidden"
+              className="w-full phone:w-full tablet:w-1/2 laptop:w-1/3 flex-shrink-0 overflow-hidden"
             >
-              <div className="overflow-hidden">
-                <img
-                  src={item.img}
-                  alt="Duplicate Last"
-                  className="block h-[15rem] w-[22rem] scale-100 hover:cursor-pointer hover:scale-105"
-                />
-              </div>
-              <div className="flex items-center justify-center mb-2 border-b-[1px] w-[70%] m-auto py-2 gap-4 pt-2">
-                {item.calanderIcon}
-                <span>{item.date}</span>
-                {item.adminIcon}
-                <span>{item.name}</span>
-              </div>
-              <h2 className="text-lg font-semibold mb-2 text-left px-6">
-                {item.title}
-              </h2>
+              <SlideContent item={item} />
             </div>
           ))}
 
+          {/* Original Slides */}
           {content.map((item, index) => (
-            <div key={index} className="w-1/3 flex-shrink-0 overflow-hidden">
-              <div className="overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="block h-[15rem] w-[22rem] scale-100 hover:cursor-pointer hover:scale-105"
-                />
-              </div>
-              <div className="flex items-center justify-center mb-2 border-b-[1px] w-[70%] m-auto py-2 gap-4 pt-2">
-                {item.calanderIcon}
-                <span>{item.date}</span>
-                {item.adminIcon}
-                <span>{item.name}</span>
-              </div>
-
-              <h2 className="text-lg font-semibold mb-2 text-left px-6">
-                {item.title}
-              </h2>
+            <div
+              key={index}
+              className="w-full phone:w-full tablet:w-1/2 laptop:w-1/3 flex-shrink-0 overflow-hidden"
+            >
+              <SlideContent item={item} />
             </div>
           ))}
 
           {/* Duplicate First Three Slides */}
           {content.slice(0, 3).map((item, index) => (
-            <>
-              <div
-                key={`duplicate-first-${index}`}
-                className="w-1/3 flex-shrink-0 overflow-hidden"
-              >
-                <div className="overflow-hidden">
-                  <img
-                    src={item.img}
-                    alt="Duplicate First"
-                    className="block h-[15rem] w-[22rem] scale-100 hover:cursor-pointer hover:scale-105"
-                  />
-                </div>
-                <div className="flex items-center justify-center mb-2 border-b-[1px] w-[70%] m-auto py-2 gap-4 pt-2">
-                  {item.calanderIcon}
-                  <span>{item.date}</span>
-                  {item.adminIcon}
-                  <span>{item.name}</span>
-                </div>
-                <h2 className="text-lg font-semibold mb-2 text-left px-6">
-                  {item.title}
-                </h2>
-              </div>
-            </>
+            <div
+              key={`duplicate-first-${index}`}
+              className="w-full phone:w-full tablet:w-1/2 laptop:w-1/3 flex-shrink-0 overflow-hidden"
+            >
+              <SlideContent item={item} />
+            </div>
           ))}
         </div>
+
         {/* Next Button */}
         <button
           onClick={() => dispatch(nextSlide())}
-          className="absolute right-[2px] z-10 p-2 bg-gray-200 rounded-full hover:bg-gray-300 top-[40%] transform -translate-y-1/2 shadow-md shadow-primary"
+          className="absolute right-2 z-10 p-2 bg-gray-200 rounded-full hover:bg-gray-300 top-1/3 transform -translate-y-1/2 shadow-md shadow-primary"
         >
           <FaArrowCircleRight />
         </button>
+
         {/* Indicators */}
         <div className="indicators flex justify-center mt-4 space-x-2">
           {content.map((_, index) => (
@@ -159,5 +127,30 @@ const Carousel = ({ content = [] }) => {
     </div>
   );
 };
+
+// Slide Content Component
+const SlideContent = ({ item }) => (
+  <>
+    <div className="overflow-hidden rounded-t-[5px]">
+      <img
+        src={item.img}
+        alt={item.title}
+        className="block h-[15rem] w-full sm:w-[18rem] md:w-[22rem] scale-100 hover:cursor-pointer hover:scale-105 rounded-t-[5px]"
+      />
+    </div>
+    <div className="flex items-center justify-center mb-2 border-b-[1px] w-[70%] m-auto py-2 gap-4 pt-2">
+      {item.calanderIcon}
+      <span>{item.date}</span>
+      {item.adminIcon}
+      <span>{item.name}</span>
+    </div>
+    <h2 className="text-lg font-semibold mb-2 text-left px-6">{item.title}</h2>
+    <div className="py-4 px-6">
+      <Button variant="primary" size="sm" className="bg-btn-bg-main font-bold">
+        explore more
+      </Button>
+    </div>
+  </>
+);
 
 export default Carousel;

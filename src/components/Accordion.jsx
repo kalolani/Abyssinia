@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 // src/components/Accordion.jsx
 import { motion } from "framer-motion";
@@ -6,13 +7,14 @@ import { toggleItem } from "../Redux/accordionSlice";
 import { FiPlus } from "react-icons/fi";
 import { FaTimes } from "react-icons/fa";
 
-function Accordion({ num, title, children }) {
+function Accordion({ id, num, title, children }) {
   const dispatch = useDispatch();
   const curOpen = useSelector((state) => state.accordion.openItem); // Get the current open item number
-  const isOpen = num === curOpen; // Check if this item is open
+  const isOpen = id === curOpen; // Check if this item is open
+  console.log(isOpen);
 
   const toggleHandler = () => {
-    dispatch(toggleItem(isOpen ? null : num)); // Toggle: close if open, open if closed
+    dispatch(toggleItem(isOpen ? null : id)); // Toggle: close if open, open if closed
   };
 
   const iconColor = isOpen ? "rgb(241 245 249)" : "rgb(120 53 15)";
@@ -20,7 +22,7 @@ function Accordion({ num, title, children }) {
   return (
     <div
       className={`w-[450px] relative shadow-md py-[14px] px-[24px] cursor-pointer border-[1px] grid grid-cols-[auto_1fr_auto] items-center rounded-t-md gap-[24px] ${
-        isOpen ? "open" : "pb-0 gap-[15px]"
+        isOpen ? "open" : "gap-[5px]"
       }`}
       onClick={toggleHandler} // Single handler for toggling open/close
     >
@@ -42,9 +44,7 @@ function Accordion({ num, title, children }) {
         )}
       </p>
       <motion.div
-        className={`w-full col-span-3 px-2 overflow-hidden ${
-          isOpen ? "" : "h-[0px] p-0"
-        }`}
+        className="w-full col-span-3 px-2 overflow-hidden"
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
         transition={{
@@ -56,7 +56,7 @@ function Accordion({ num, title, children }) {
       </motion.div>
 
       <div
-        className={`absolute top-0 left-0 w-full bg-orange-950 z-0 ${
+        className={`absolute top-0 left-0 w-full bg-orange-950 z-0 rounded-t-[5px] ${
           isOpen ? "h-[60px]" : "h-0"
         }`}
       ></div>

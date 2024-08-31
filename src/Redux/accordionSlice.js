@@ -1,16 +1,14 @@
 // src/Redux/accordionSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  openItem: null, // Initially, no item is open
-};
-
 const accordionSlice = createSlice({
   name: "accordion",
-  initialState,
+  initialState: {
+    openItem: 1, // Open the first item by default (assuming '1' represents the first item's identifier)
+  },
   reducers: {
     toggleItem: (state, action) => {
-      // Store only a serializable value
+      // Toggle logic: close if the same item is clicked, otherwise open the new item
       state.openItem =
         state.openItem === action.payload ? null : action.payload;
     },
