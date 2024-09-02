@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import Button from "./Button";
-import { Link } from "react-router-dom";
+import Link from "./Link";
+import { NavLink } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const ProjectCard = ({
@@ -40,15 +40,15 @@ const ProjectCard = ({
                 </ul>
               </div>
               <div className="flex justify-center">
-                <Link to={`/${path}`}>
+                <NavLink to={`/${path}`}>
                   {" "}
-                  <Button
+                  <Link
                     variant="primary"
                     // className="opacity-0 group-hover:opacity-100 p-4 transition-opacity delay-200"
                   >
                     learn more
-                  </Button>
-                </Link>
+                  </Link>
+                </NavLink>
               </div>
             </div>
           </div>

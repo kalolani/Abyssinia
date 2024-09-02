@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Link from "./Link";
 import PageNav from "./PageNav";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -46,16 +46,12 @@ function Header() {
         viewport={{ once: false, amount: 0.7 }}
         className="relative z-[999] flex justify-center items-center mt-10 phone:mt-6 tablet:mt-6 laptop:mt-10"
       >
-        <Button
-          variant="primary"
-          size="lg"
-          className="bg-btn-bg-main font-bold"
-        >
+        <Link variant="primary" size="lg" className="bg-btn-bg-main font-bold">
           Apply now
-        </Button>
-        <Button variant="secondary" size="lg" className="ml-4">
+        </Link>
+        <Link variant="secondary" size="lg" className="ml-4">
           Read more
-        </Button>
+        </Link>
       </motion.div>
       <div className="absolute top-[70%] phone:top-[85%] mtab:top-[80%] tablet:top-[75%] laptop:top-[70%] end-[-24%] z-[-1]">
         <img src={shape3} />

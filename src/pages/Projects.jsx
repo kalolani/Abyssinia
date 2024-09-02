@@ -14,6 +14,10 @@ import mall from "../assets/images/mall.jpg";
 import school from "../assets/images/school.png";
 import epr from "../assets/images/epr.png";
 import shape6 from "../assets/images/shape-06.webp";
+import { FaReact } from "react-icons/fa6";
+import { FaLaravel } from "react-icons/fa6";
+import { SiTailwindcss } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
 
 function Projects() {
   const { showPages } = useStores();
@@ -83,36 +87,60 @@ function Projects() {
             title="mall building information management system"
             description="we provide a complete mall building information management system with web application and mobile application"
             path="building"
+            icon_1={<FaReact size={30} color="rgb(6 182 212)" />}
+            icon_2={<SiTailwindcss size={30} color="rgb(14 165 233)" />}
+            icon_3={<FaLaravel size={30} color="rgb(220 38 38)" />}
+            icon_4={<SiPostgresql size={30} />}
           />
           <ProjectCard
             image={school}
             title="school information system"
             description="we provide a complete information system to manage all school activities.It has web app mobile app and  desktop app for school manager,for students and for parents"
             path="school"
+            icon_1={<FaReact size={30} color="rgb(6 182 212)" />}
+            icon_2={<SiTailwindcss size={30} color="rgb(14 165 233)" />}
+            icon_3={<FaLaravel size={30} color="rgb(220 38 38)" />}
+            icon_4={<SiPostgresql size={30} />}
           />
           <ProjectCard
             image={epr}
             title="EPR system"
             description="A complete EPR system for factories and trading companies"
             path="epr"
+            icon_1={<FaReact size={30} color="rgb(6 182 212)" />}
+            icon_2={<SiTailwindcss size={30} color="rgb(14 165 233)" />}
+            icon_3={<FaLaravel size={30} color="rgb(220 38 38)" />}
+            icon_4={<SiPostgresql size={30} />}
           />
           <ProjectCard
             image={mall}
             title="mall building information management system"
             description="we provide a complete mall building information management system with web application and mobile application"
             path="building"
+            icon_1={<FaReact size={30} color="rgb(6 182 212)" />}
+            icon_2={<SiTailwindcss size={30} color="rgb(14 165 233)" />}
+            icon_3={<FaLaravel size={30} color="rgb(220 38 38)" />}
+            icon_4={<SiPostgresql size={30} />}
           />
           <ProjectCard
             image={school}
             title="school information system"
             description="we provide a complete information system to manage all school activities.It has web app mobile app and  desktop app for school manager,for students and for parents"
             path="school"
+            icon_1={<FaReact size={30} color="rgb(6 182 212)" />}
+            icon_2={<SiTailwindcss size={30} color="rgb(14 165 233)" />}
+            icon_3={<FaLaravel size={30} color="rgb(220 38 38)" />}
+            icon_4={<SiPostgresql size={30} />}
           />
           <ProjectCard
             image={epr}
             title="EPR system"
             description="A complete EPR system for factories and trading companies"
             path="epr"
+            icon_1={<FaReact size={30} color="rgb(6 182 212)" />}
+            icon_2={<SiTailwindcss size={30} color="rgb(14 165 233)" />}
+            icon_3={<FaLaravel size={30} color="rgb(220 38 38)" />}
+            icon_4={<SiPostgresql size={30} />}
           />
         </motion.div>
       </div>

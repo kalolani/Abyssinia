@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import Button from "./Button";
 
 /* eslint-disable react/prop-types */
 const ServiceCard = ({ title, description, buttonText, image }) => {
@@ -15,15 +14,6 @@ const ServiceCard = ({ title, description, buttonText, image }) => {
         <p className="text-secondary group-hover:text-tertiary text-[13px] mb-4 text-center py-2">
           {description}
         </p>
-        {/* <div className="flex justify-center">
-          <Button
-            variant="primary"
-            size="md"
-            className="bg-btn-bg-main font-bold"
-          >
-            {buttonText}
-          </Button>
-        </div> */}
       </div>
       <div className="absolute z-0 top-0 left-0 h-full w-full cursor-pointer">
         <div className="absolute -z-9 top-0 right-0 h-full w-[0%] group-hover:cursor-pointer group-hover:w-full group-hover:bg-indigo-950 transform translate-x-105 transition-all duration-[720ms]"></div>

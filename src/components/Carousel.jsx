@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { nextSlide, prevSlide, setSlide } from "../Redux/carauselSlice";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
-import Button from "./Button";
+import Link from "./Link";
 
 const Carousel = ({ content = [] }) => {
   const dispatch = useDispatch();
@@ -146,9 +146,9 @@ const SlideContent = ({ item }) => (
     </div>
     <h2 className="text-lg font-semibold mb-2 text-left px-6">{item.title}</h2>
     <div className="py-4 px-6">
-      <Button variant="primary" size="sm" className="bg-btn-bg-main font-bold">
+      <Link variant="primary" size="sm" className="bg-btn-bg-main font-bold">
         explore more
-      </Button>
+      </Link>
     </div>
   </>
 );

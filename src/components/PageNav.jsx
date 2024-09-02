@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react";
-import Button from "./Button";
+import Link from "./Link";
 import { MdMenu } from "react-icons/md";
 import { useMediaQuery } from "react-responsive";
 import { useStores } from "../contexts/storeContext";
 import { IoCloseOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function PageNav() {
   const [isSticky, setIsSticky] = useState(false);
@@ -65,12 +65,13 @@ function PageNav() {
           }`}
         >
           <li className="font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-all duration-200">
-            <Link
+            <NavLink
+              NavLink
               to="/"
               className="before:inline-block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li
             onMouseEnter={() => setShowPages(true)}
@@ -82,45 +83,45 @@ function PageNav() {
             </a>
           </li>
           <li className="font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
-            <Link
+            <NavLink
               to="/project"
               className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
             >
               {" "}
               portifolio
-            </Link>
+            </NavLink>
           </li>
           <li className="font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
-            <Link
+            <NavLink
               to="/about"
               className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
             >
               about
-            </Link>
+            </NavLink>
           </li>
           <li className="font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
-            <Link
+            <NavLink
               to="/blog"
               className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
             >
               blog
-            </Link>
+            </NavLink>
           </li>
           <li className="font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200">
-            <Link
+            <NavLink
               to="/contact"
               className="before:block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]"
             >
               contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <div className={`${isHidden ? "" : "hidden"}`}>
-          <Link to="/contact">
-            <Button variant="primary" size="sm">
+          <NavLink to="/contact">
+            <Link variant="primary" size="sm">
               let's talk!
-            </Button>
-          </Link>
+            </Link>
+          </NavLink>
         </div>
       </div>
     </>

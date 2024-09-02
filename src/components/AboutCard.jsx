@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import Button from "./Button";
+import Button from "./Link";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";

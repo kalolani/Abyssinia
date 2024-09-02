@@ -9,7 +9,6 @@ import BlogCarousel from "../components/BlogCarousel";
 import BlogCard from "../components/BlogCard";
 import ProjectCard from "../components/ProjectCard";
 import ServiceCard from "../components/ServiceCard";
-import Button from "../components/Button";
 import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
 import star from "../assets/images/star.png";
@@ -19,6 +18,7 @@ import system from "../assets/images/system.png";
 import right from "../assets/images/right.png";
 import free from "../assets/images/free.png";
 import software from "../assets/images/software.png";
+import { Link } from "react-router-dom";
 function BuildingSystem() {
   const { showPages } = useStores();
   return (
@@ -229,13 +229,13 @@ function BuildingSystem() {
               buttonText="Learn More"
             />
           </div>
-          <Button
+          <Link
             variant="primary"
             size="lg"
             className="bg-btn-bg-main font-bold"
           >
             learn more
-          </Button>
+          </Link>
         </motion.div>
       </div>
       <Footer />

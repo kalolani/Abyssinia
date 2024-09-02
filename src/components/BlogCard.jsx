@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
-import Button from "./Button";
-
+import Link from "./Link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -42,13 +41,13 @@ const BlogCard = () => {
               {item.title}
             </h2>
             <div className="mb-[50px]">
-              <Button
+              <Link
                 variant="primary"
                 size="sm"
                 className="bg-btn-bg-main font-bold"
               >
                 explore more
-              </Button>
+              </Link>
             </div>
 
             <div
@@ -76,13 +75,13 @@ const BlogCard = () => {
                 {item.title}
               </h2>
               <div className="">
-                <Button
+                <Link
                   variant="primary"
                   size="sm"
                   className="bg-btn-bg-main font-bold"
                 >
                   explore more
-                </Button>
+                </Link>
               </div>
             </div>
           </div>

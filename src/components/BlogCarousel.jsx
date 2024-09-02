@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import Button from "./Button";
+import Button from "./Link";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
