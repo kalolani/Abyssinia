@@ -14,7 +14,7 @@ function PageNav() {
   const isLargeScreen = useMediaQuery({ minWidth: 1024 });
   const [isHidden, setIsHidden] = useState(false);
 
-  const { isOpen, handleIsOpen, setShowPages } = useStores();
+  const { isOpen, handleIsOpen, setShowPages, showPages } = useStores();
   const handleScroll = () => {
     setIsSticky(window.scrollY > 50);
   };
@@ -76,6 +76,7 @@ function PageNav() {
           <li
             onMouseEnter={() => setShowPages(true)}
             onMouseLeave={() => setShowPages(false)}
+            onClick={() => setShowPages(!showPages)}
             className={`font-colasta group py-2 relative font-medium text-primary capitalize text-base text-base hover:cursor-pointer hover:text-btn-bg-main transition-hover duration-200`}
           >
             <a className="before:inline-block before:content-[''] before:absolute before:bottom-[15%] before:w-full before:h-[2px] before:bg-btn-bg-main before:scale-x-0 before:origin-center group-hover:before:scale-x-100 before:transition-all before:duration-[200ms]">

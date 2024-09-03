@@ -97,7 +97,14 @@ function StoreProvider({ children }) {
   }
   return (
     <StoreContext.Provider
-      value={{ isOpen, handleIsOpen, content, showPages, setShowPages }}
+      value={{
+        isOpen,
+        setIsOpen,
+        handleIsOpen,
+        content,
+        showPages,
+        setShowPages,
+      }}
     >
       {children}
     </StoreContext.Provider>

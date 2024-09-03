@@ -17,24 +17,9 @@ const TestimonialCarousel = () => {
     speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
     nextArrow: <HiMiniArrowLongRight className="cursor-pointer" />,
     prevArrow: <HiMiniArrowLongLeft className="cursor-pointer" />,
     customPaging: (i) => <button className="custom-dot px-64">{i + 1}</button>,
-    // appendDots: (dots) => (
-    //   <div style={{ padding: "10px" }}>
-    //     <ul
-    //       style={{
-    //         display: "flex",
-    //         justifyContent: "center",
-    //         listStyle: "none",
-    //       }}
-    //     >
-    //       {dots}
-    //     </ul>
-    //   </div>
-    // ),
   };
 
   const testimony = [

@@ -23,6 +23,7 @@ function Navbar() {
           <li className="list-none">
             <Link
               to="/"
+              onClick={() => handleIsOpen()}
               className="no-underline text-white phone:text-[1.1rem] mdphone:text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
             >
               <span className="mr-[2rem] capitalize">01</span>home
@@ -30,11 +31,13 @@ function Navbar() {
           </li>
           <li className="list-none">
             <Link
-              onMouseEnter={() => setShowPages(true)}
-              onMouseLeave={() => setShowPages(false)}
+              // onMouseEnter={() => setShowPages(true)}
+              // onMouseLeave={() => setShowPages(false)}
+              onClick={() => setShowPages(!showPages)}
               className="no-underline text-white phone:text-[1.1rem] mdphone:text-[1.5rem] font-[400] uppercase py-[1.2rem] px-[2.3rem] inline-block bg-custom-gradient bg-230% hover:bg-[100%] hover:translate-x-8 hover:text-btn-bg-main transition-all duration-[500ms]"
             >
-              <span className="mr-[2rem] capitalize">02</span>pages
+              <span className="mr-[2rem] capitalize">02</span>
+              pages
             </Link>
           </li>
           <li className="list-none">

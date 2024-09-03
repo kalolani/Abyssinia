@@ -3,10 +3,10 @@ import { useStores } from "../contexts/storeContext";
 // import { useStores } from "../contexts/storeContext";
 
 function PagesDropdown() {
-  const { setShowPages, handleIsOpen } = useStores();
+  const { setShowPages, setIsOpen } = useStores();
   function handleClick() {
-    handleIsOpen();
-    setShowPages(false);
+    setShowPages(!setShowPages);
+    setIsOpen(false);
   }
 
   return (
