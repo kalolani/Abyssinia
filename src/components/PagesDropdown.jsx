@@ -3,7 +3,12 @@ import { useStores } from "../contexts/storeContext";
 // import { useStores } from "../contexts/storeContext";
 
 function PagesDropdown() {
-  const { setShowPages } = useStores();
+  const { setShowPages, handleIsOpen } = useStores();
+  function handleClick() {
+    handleIsOpen();
+    setShowPages(false);
+  }
+
   return (
     <div
       onMouseEnter={() => setShowPages(true)}
@@ -12,13 +17,19 @@ function PagesDropdown() {
     >
       <ul className="flex flex-col gap-4">
         <li className="font-colasta text-primary text-[15px] hover:text-btn-bg-main">
-          <Link to="/building">Buildign System</Link>
+          <Link onClick={() => handleClick()} to="/building">
+            Buildign System
+          </Link>
         </li>
         <li className="font-colasta text-primary text-[15px] hover:text-btn-bg-main">
-          <Link to="/school">School System</Link>
+          <Link onClick={() => handleClick()} to="/school">
+            School System
+          </Link>
         </li>
         <li className="font-colasta text-primary text-[15px] hover:text-btn-bg-main">
-          <Link to="/epr">EPR system</Link>
+          <Link onClick={() => handleClick()} to="/epr">
+            EPR system
+          </Link>
         </li>
       </ul>
     </div>

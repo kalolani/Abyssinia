@@ -12,7 +12,8 @@ import Testimony from "../components/Testimony";
 import Footer from "../components/Footer";
 import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
-import Carousel from "../components/Carousel";
+
+import BlogCarousel from "../components/BlogCarousel";
 // import ReduxCarousel from "../components/ReduxCarousel";
 
 const faqs = [
@@ -54,7 +55,7 @@ function Home() {
       <FrequentlyAsked data={faqs} />
       <Testimony />
       {/* <div className="py-8">kaleab</div> */}
-      <Carousel content={content} />
+      <BlogCarousel content={content} />
       <Footer />
     </div>
   );

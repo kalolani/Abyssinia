@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
 import kaleab from "../assets/images/kaleab.jpg";
-import ReduxCarousel from "../components/ReduxCarousel";
 
 function About() {
   const { showPages, content } = useStores();

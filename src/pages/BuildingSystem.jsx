@@ -3,11 +3,7 @@ import Navbar from "../components/Navbar";
 import PageNav from "../components/PageNav";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import AboutCard from "../components/AboutCard";
 import Footer from "../components/Footer";
-import BlogCarousel from "../components/BlogCarousel";
-import BlogCard from "../components/BlogCard";
-import ProjectCard from "../components/ProjectCard";
 import ServiceCard from "../components/ServiceCard";
 import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
@@ -18,7 +14,7 @@ import system from "../assets/images/system.png";
 import right from "../assets/images/right.png";
 import free from "../assets/images/free.png";
 import software from "../assets/images/software.png";
-import { Link } from "react-router-dom";
+import Link from "../components/Link";
 function BuildingSystem() {
   const { showPages } = useStores();
   return (
@@ -51,14 +47,6 @@ function BuildingSystem() {
           </div>
         </div>
       </div>
-      {/* <div className="relative z-10 py-[2rem] text-center">
-        <div>
-          <img
-            src="dot.png"
-            className="block absolute z-11 top-[35px] left-10 my-16"
-          />
-        </div>
-      </div> */}
       <div className="max-w-[1000px] m-auto grid phone:grid-cols-1 mtab:grid-cols-2 items-center gap-4 py-20">
         <motion.div
           variants={fadeIn("right", 0)}

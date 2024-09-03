@@ -3,13 +3,8 @@ import Navbar from "../components/Navbar";
 import PageNav from "../components/PageNav";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import AboutCard from "../components/AboutCard";
 import Footer from "../components/Footer";
-import BlogCarousel from "../components/BlogCarousel";
-import BlogCard from "../components/BlogCard";
-import ProjectCard from "../components/ProjectCard";
 import ServiceCard from "../components/ServiceCard";
-
 import { useStores } from "../contexts/storeContext";
 import PagesDropdown from "../components/PagesDropdown";
 import star from "../assets/images/star.png";
@@ -19,7 +14,7 @@ import system from "../assets/images/system.png";
 import right from "../assets/images/right.png";
 import free from "../assets/images/free.png";
 import software from "../assets/images/software.png";
-import { Link } from "react-router-dom";
+import Link from "../components/Link";
 
 function SchoolSystem() {
   const { showPages } = useStores();

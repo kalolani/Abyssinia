@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import AboutCard from "../components/AboutCard";
 import Footer from "../components/Footer";
-import BlogCarousel from "../components/BlogCarousel";
 import BlogCard from "../components/BlogCard";
 import ProjectCard from "../components/ProjectCard";
 import { useStores } from "../contexts/storeContext";
