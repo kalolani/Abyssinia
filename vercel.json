@@ -1,0 +1,36 @@
+{
+  "rewrites": [
+    {
+      "source": "/about",
+      "destination": "/"
+    },
+    {
+      "source": "/project",
+      "destination": "/"
+    },
+    {
+      "source": "/blog",
+      "destination": "/"
+    },
+    {
+      "source": "/building",
+      "destination": "/"
+    },
+    {
+      "source": "/school",
+      "destination": "/"
+    },
+    {
+      "source": "/epr",
+      "destination": "/"
+    },
+    {
+      "source": "/contact",
+      "destination": "/"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
